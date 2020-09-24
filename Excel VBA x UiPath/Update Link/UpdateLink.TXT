@@ -1,0 +1,8 @@
+Sub UpdateLink( FolderPath As String, OldFileName As String, NewFileName As String )
+    
+' 更新 Excel 檔中的外部資料連結
+      
+    ActiveWorkbook.ChangeLink Name := FolderPath + OldFileName, _
+    NewName := FolderPath + NewFileName, Type := xlExcelLinks
+
+End Sub
