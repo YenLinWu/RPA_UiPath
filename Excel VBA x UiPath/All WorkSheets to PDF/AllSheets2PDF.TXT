@@ -1,0 +1,18 @@
+Sub ALLSheets2PDF( OutputPath As String, pdf_FileName As String )
+    
+    Sheets( ).Select     
+    
+    For Each ws In ActiveWorkbook.Worksheets
+    With ws.PageSetup
+        .Zoom = False
+        .FitToPagesWide = 1
+        .FitToPagesTall = 1
+    End With
+    Next ws
+    
+    ActiveSheet.ExportAsFixedFormat Type := xlTypePDF, _ 
+        Filename := OutputPath + pdf_FileName, _
+        Quality := x1QualityStandard, IncludeDocProperties := True, _
+        IgnorePrintAreas := False, OpenAfterPublish := False
+
+End Sub
