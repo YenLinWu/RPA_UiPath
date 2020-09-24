@@ -1,16 +1,9 @@
-# 機器人流程自動化 Robotic Process Automation 實戰範例  
+# RPA(Robotic Process Automation) 實戰範例  
 
 #### 作者
 <span> - &copy; Tom Wu (<a href="https://github.com/YenLinWu">Github</a>) </span>  
 
 #### 系統    
-* Windows 10
-* Studio Pro 2020.4.1  
-
-  
-| 專案名稱 | 說明 | 範例資料來源 | 
-| ---------- | :-----------: | :-----------: | 
-| *All Sheets to PDF* | 將 XLSX 檔中的所有工作表，匯出成一個 PDF 檔。 | [臺北市政府衛生局水質抽驗結果](https://data.gov.tw/dataset/121918) | 
-| *Column Width AutoFit* | 在 XLSX 檔指定工作表中，自動調整指定的欄位寬。 |  |
-
- 
+* Windows 10  
+* Microsoft Office 2016
+* UiPath Studio Pro 2020.4.3    
