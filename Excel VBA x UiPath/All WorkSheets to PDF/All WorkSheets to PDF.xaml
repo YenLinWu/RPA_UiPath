@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1004.8,1226.4" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="723.2,1241.6" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="44">
       <x:String>System.Activities</x:String>
@@ -53,7 +53,7 @@
       <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="使用 VBA 將 Excel 檔中所有工作表匯出成一個 PDF 檔。&#xA;&#xA;參數說明 : &#xA;str_InputPath : 存放 Excel 檔的資料夾路徑 &#xA;str_OutputPath : 欲匯出 PDF 檔的目的資料夾路徑&#xA;str_SourseFileName : Excel 檔的檔案名稱(含副檔名)  &#xA;str_OutputFileName : 欲匯出 PDF 檔的檔案名稱(含副檔名)" DisplayName="All WorkSheets to PDF" sap:VirtualizedContainerService.HintSize="475.2,1021.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="將 Excel 檔中所有的工作表匯出成一個 PDF 檔。&#xA;&#xA;參數說明 :  &#xD;&#xA;str_VBA_FolderPath : 存放 VBA 程式碼的資料夾路徑&#xA;str_InputPath : 存放 Excel 檔的資料夾路徑 &#xA;str_OutputPath : 欲匯出 PDF 檔的目的資料夾路徑&#xA;str_ExcelFileName : Excel 檔的檔案名稱(含副檔名)  &#xA;str_OutputFileName : 欲匯出 PDF 檔的檔案名稱(含副檔名)" DisplayName="All WorkSheets to PDF" sap:VirtualizedContainerService.HintSize="475.2,1036.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Default="%[AllSheets2PDF]" Name="str_LogPrefix" />
       <Variable x:TypeArguments="x:String" Name="str_OutputPath">
@@ -67,7 +67,17 @@
         </Variable.Default>
       </Variable>
       <Variable x:TypeArguments="x:String" Default="臺北市政府衛生局水質抽驗結果.pdf" Name="str_OutputFileName" />
-      <Variable x:TypeArguments="x:String" Default="臺北市政府衛生局水質抽驗結果.xlsx" Name="str_SourseFileName" />
+      <Variable x:TypeArguments="x:String" Default="臺北市政府衛生局水質抽驗結果.xlsx" Name="str_ExcelFileName" />
+      <Variable x:TypeArguments="x:String" Name="str_VBA_CodeName">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:String">AllWorksheets2PDF.txt</Literal>
+        </Variable.Default>
+      </Variable>
+      <Variable x:TypeArguments="x:String" Name="str_VBA_FolderPath">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:String">D:\RPA_UiPath\Excel VBA x RPA\All WorkSheets to PDF\</Literal>
+        </Variable.Default>
+      </Variable>
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
@@ -83,10 +93,10 @@
         <OutArgument x:TypeArguments="x:String">[str_OutputFileName]</OutArgument>
       </Assign.To>
       <Assign.Value>
-        <InArgument x:TypeArguments="x:String">[str_SourseFileName.Split( ".".ToCharArray )(0) + ".pdf"]</InArgument>
+        <InArgument x:TypeArguments="x:String">[str_ExcelFileName.Split( ".".ToCharArray )(0) + ".pdf"]</InArgument>
       </Assign.Value>
     </Assign>
-    <ui:ExcelApplicationScope Password="{x:Null}" CreateNewFile="False" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="433.6,382.4" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_2" WorkbookPath="[str_InputPath + str_SourseFileName]">
+    <ui:ExcelApplicationScope Password="{x:Null}" CreateNewFile="False" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="433.6,382.4" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_2" WorkbookPath="[str_InputPath + str_ExcelFileName]">
       <ui:ExcelApplicationScope.Body>
         <ActivityAction x:TypeArguments="ui:WorkbookApplication">
           <ActivityAction.Argument>
@@ -126,7 +136,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:Click>
-            <ui:InvokeVBA OutputValue="{x:Null}" CodeFilePath="AllSheets2PDF.txt" DisplayName="執行 VBA" EntryMethodName="ALLSheets2PDF" EntryMethodParameters="[{  str_OutputPath, str_SourseFileName.Split( &quot;.&quot;.ToCharArray )(0) + &quot;.pdf&quot; }]" sap:VirtualizedContainerService.HintSize="333.6,88" sap2010:WorkflowViewState.IdRef="InvokeVBA_2" />
+            <ui:InvokeVBA OutputValue="{x:Null}" CodeFilePath="[str_VBA_FolderPath + str_VBA_CodeName]" DisplayName="執行 VBA" EntryMethodName="[str_VBA_CodeName.Split(&quot;.&quot;C)(0)]" EntryMethodParameters="[{  str_OutputPath, str_ExcelFileName.Split( &quot;.&quot;.ToCharArray )(0) + &quot;.pdf&quot; }]" sap:VirtualizedContainerService.HintSize="333.6,88" sap2010:WorkflowViewState.IdRef="InvokeVBA_2" />
           </Sequence>
         </ActivityAction>
       </ui:ExcelApplicationScope.Body>
