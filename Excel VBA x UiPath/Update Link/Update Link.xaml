@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="786.4,1212" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="863.2,1212" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -50,18 +50,26 @@
       <AssemblyReference>UiPath.CV</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="更新 Excel 檔中的外部資料連結。&#xA;&#xA;參數說明 :  &#xA;str_VBA_FolderPath : 存放 VBA 程式碼的資料夾路徑&#xA;str_InputPath : 存放 Excel 檔的資料夾路徑  &#xD;&#xA;str_FileName :  Excel 檔的檔案名稱(含副檔名)&#xD;&#xA;str_ExternalFolderPath : 存放外部連結檔的資料夾路徑&#xA;str_OldFileName : 初始的外部連結檔的檔案名稱(含副檔名)&#xD;&#xA;str_NewFileName : 新的外部連結檔的檔案名稱(含副檔名)" DisplayName="Update Link" sap:VirtualizedContainerService.HintSize="475.2,1007.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="更新 Excel 檔中的外部資料連結。&#xA;&#xA;參數說明 :  &#xA;str_VBA_FolderPath : 存放 VBA 程式碼的資料夾路徑&#xA;str_InputPath : 存放 Excel 檔的資料夾路徑  &#xA;str_FileName :  Excel 檔的檔案名稱(含副檔名)&#xA;str_ExternalFolderPath : 存放外部連結檔的資料夾路徑&#xA;str_OldFileName : 初始的外部連結檔的檔案名稱(含副檔名)&#xA;str_NewFileName : 新的外部連結檔的檔案名稱(含副檔名)" DisplayName="Update Link" sap:VirtualizedContainerService.HintSize="475.2,1007.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Default="%[UpdateLink]" Name="str_LogPrefix" />
       <Variable x:TypeArguments="x:String" Default="UpdateLink.txt" Name="str_VBA_CodeName" />
-      <Variable x:TypeArguments="x:String" Default="D:\UiPath_RPA\VBA_with_RPA\Update_Link\" Name="str_VBA_FolderPath" />
+      <Variable x:TypeArguments="x:String" Name="str_VBA_FolderPath">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:String">D:\RPA_UiPath\Excel VBA x RPA\Update Link\</Literal>
+        </Variable.Default>
+      </Variable>
       <Variable x:TypeArguments="x:String" Default="SampleData.xlsx" Name="str_FileName" />
-      <Variable x:TypeArguments="x:String" Default="D:\UiPath_RPA\VBA_with_RPA\Update_Link\Input\" Name="str_InputPath" />
+      <Variable x:TypeArguments="x:String" Name="str_InputPath">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:String">D:\RPA_UiPath\Excel VBA x RPA\Update Link\Input\</Literal>
+        </Variable.Default>
+      </Variable>
       <Variable x:TypeArguments="x:String" Default="OldData.xlsx" Name="str_OldFileName" />
       <Variable x:TypeArguments="x:String" Default="NewData.xlsx" Name="str_NewFileName" />
       <Variable x:TypeArguments="x:String" Name="str_ExternalFolderPath">
         <Variable.Default>
-          <Literal x:TypeArguments="x:String">D:\UiPath_RPA\VBA_with_RPA\Update_Link\Input\</Literal>
+          <Literal x:TypeArguments="x:String">D:\RPA_UiPath\Excel VBA x RPA\Update Link\Input\</Literal>
         </Variable.Default>
       </Variable>
     </Sequence.Variables>
@@ -113,7 +121,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:Click>
-            <ui:InvokeVBA OutputValue="{x:Null}" CodeFilePath="[str_VBA_CodeName]" DisplayName="執行 VBA" EntryMethodName="[str_VBA_CodeName.Split(&quot;.&quot;C)(0)]" EntryMethodParameters="[{ str_ExternalFolderPath, str_OldFileName, str_NewFileName }]" sap:VirtualizedContainerService.HintSize="333.6,88" sap2010:WorkflowViewState.IdRef="InvokeVBA_1" />
+            <ui:InvokeVBA OutputValue="{x:Null}" CodeFilePath="[str_VBA_FolderPath + str_VBA_CodeName]" DisplayName="執行 VBA" EntryMethodName="[str_VBA_CodeName.Split(&quot;.&quot;C)(0)]" EntryMethodParameters="[{ str_ExternalFolderPath, str_OldFileName, str_NewFileName }]" sap:VirtualizedContainerService.HintSize="333.6,88" sap2010:WorkflowViewState.IdRef="InvokeVBA_1" />
           </Sequence>
         </ActivityAction>
       </ui:ExcelApplicationScope.Body>
