@@ -1,4 +1,4 @@
-Sub ALLSheets2PDF( OutputPath As String, pdf_FileName As String )
+Sub ALLWorksheets2PDF( OutputPath As String, pdf_FileName As String )
     
     Sheets( ).Select     
     
