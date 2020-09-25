@@ -1,0 +1,28 @@
+Sub Convert2Numeric( SheetName As String, SelectedRange As String, AnchorCell As String ) 
+
+' 在指定的工作表中，將指定(或自動判斷)儲存格的範圍中資料，其格式轉換成數值。
+
+    Dim lower_right_cell As Range, r As Range
+
+    Sheets( SheetName ).Select
+
+    If SelectedRange<>"" And AnchorCell="" Then
+    ' 指定範圍的格式轉換 
+        For Each r In Range( SelectedRange )
+            r.FormulaR1C1 = r.Text
+        Next r
+    
+    ElseIf SelectedRange="" And AnchorCell<>"" Then
+    ' 自動選取範圍的格式轉換
+        Set lower_right_cell = Range( AnchorCell ).SpecialCells(xlCellTypeLastCell) 
+        last_cell = lower_right_cell.Address()          
+        For Each r In Range( AnchorCell & ":" & last_cell ) 
+            r.FormulaR1C1 = r.Text
+        Next r
+    
+    Else 
+        MsgBox "外部傳入的參數設定有誤!"        
+       
+    End If
+
+End Sub
