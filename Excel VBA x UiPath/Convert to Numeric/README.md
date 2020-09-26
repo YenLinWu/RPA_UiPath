@@ -1,5 +1,7 @@
 # Convert to Numeric   
-> RPA 機器人執行 VBA 程式碼，針對 Excel 檔中特定範圍的儲存格資料，將其格式轉換成數值型態。  
+> RPA 機器人執行 VBA 程式碼，針對 Excel 檔中特定範圍的儲存格資料，將其格式轉換成數值型態。   
+
+![image](./README_gif/Demo.gif)
 
 ## VBA 語法參考資料  
 - [Range 物件 (Excel)](https://docs.microsoft.com/zh-tw/office/vba/api/excel.range(object))   
