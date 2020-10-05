@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="766.4,1126.4" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="464.8,1166.4" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -47,33 +47,13 @@
       <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="刪除 Excel 檔中所有的外部資料連結。&#xA;&#xA;參數說明 :  &#xA;str_VBA_FolderPath : 存放 VBA 程式碼的資料夾路徑&#xA;str_InputFolderPath : 存放 Excel 檔的資料夾路徑  &#xA;str_FileName :  Excel 檔的檔案名稱(含副檔名)" DisplayName="Break External Links" sap:VirtualizedContainerService.HintSize="475.2,961.6" sap2010:WorkflowViewState.IdRef="Sequence_2">
+  <Sequence sap2010:Annotation.AnnotationText="刪除 Excel 檔中所有的外部資料連結。&#xA;&#xA;參數說明 :  &#xA;str_VBA_FolderPath : 存放 VBA 程式碼的資料夾路徑&#xA;str_InputFolderPath : 存放 Excel 檔的資料夾路徑  &#xA;str_FileName : Excel 檔的檔案名稱(含副檔名)" DisplayName="Break External Links" sap:VirtualizedContainerService.HintSize="475.2,961.6" sap2010:WorkflowViewState.IdRef="Sequence_2">
     <Sequence.Variables>
-      <Variable x:TypeArguments="x:String" Name="str_FileName">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:String">SampleData.xlsx</Literal>
-        </Variable.Default>
-      </Variable>
-      <Variable x:TypeArguments="x:String" Name="str_InputFolderPath">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:String">D:\RPA_UiPath\Excel VBA x RPA\Break External Links\Input\</Literal>
-        </Variable.Default>
-      </Variable>
-      <Variable x:TypeArguments="x:String" Name="str_LogPrefix">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:String">[BreakExternalLinks]</Literal>
-        </Variable.Default>
-      </Variable>
-      <Variable x:TypeArguments="x:String" Name="str_VBA_CodeName">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:String">BreakExternalLinks.txt</Literal>
-        </Variable.Default>
-      </Variable>
-      <Variable x:TypeArguments="x:String" Name="str_VBA_FolderPath">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:String">D:\RPA_UiPath\Excel VBA x RPA\Break External Links\</Literal>
-        </Variable.Default>
-      </Variable>
+      <Variable x:TypeArguments="x:String" Default="SampleData.xlsx" Name="str_FileName" />
+      <Variable x:TypeArguments="x:String" Default="D:\RPA_UiPath\Excel VBA x RPA\Break External Links\Input\" Name="str_InputFolderPath" />
+      <Variable x:TypeArguments="x:String" Default="%[BreakExternalLinks]" Name="str_LogPrefix" />
+      <Variable x:TypeArguments="x:String" Default="BreakExternalLinks.txt" Name="str_VBA_CodeName" />
+      <Variable x:TypeArguments="x:String" Default="D:\RPA_UiPath\Excel VBA x RPA\Break External Links\" Name="str_VBA_FolderPath" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
