@@ -8,7 +8,9 @@
 * UiPath Studio Pro 2020.4.3   
 * Python 3.6
 * Microsoft Office 2016
- 
+
+#### 步驟說明 [PPT](https://github.com/YenLinWu/RPA_UiPath/blob/master/Python%20x%20UiPath/Pivot%20Table/Pivot%20Table.pdf).   
+
 <p align="center">
   <img src="https://github.com/YenLinWu/RPA_UiPath/blob/master/Python%20x%20UiPath/Pivot%20Table/PPT_Images/PPT1.JPG">
 </p>
@@ -36,3 +38,6 @@
 <p align="center">
   <img src="https://github.com/YenLinWu/RPA_UiPath/blob/master/Python%20x%20UiPath/Pivot%20Table/PPT_Images/PPT7.JPG">
 </p>
+
+#### 參考資料  
+
