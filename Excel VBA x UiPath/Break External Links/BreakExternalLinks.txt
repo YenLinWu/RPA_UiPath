@@ -1,0 +1,19 @@
+Sub BreakExternalLinks()
+
+'刪除 Excel 檔中的所有外部資料連結
+
+    Dim wb As Workbook, ExternalLinks As Variant, x As Long
+
+    Set wb = ActiveWorkbook
+
+    'Create an Array of all External Links stored in Workbook
+    ExternalLinks = wb.LinkSources(Type:=xlLinkTypeExcelLinks)
+
+    'Loop Through each External Link in ActiveWorkbook and Break it
+    If Not IsEmpty(ExternalLinks) Then
+        For x = 1 To UBound(ExternalLinks)
+            wb.BreakLink Name:=ExternalLinks(x), Type:=xlLinkTypeExcelLinks
+        Next x  
+    End If
+
+End Sub
