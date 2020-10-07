@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="501.6,1149.6" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:p="http://schemas.uipath.com/workflow/activities/python" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="853.6,1149.6" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:p="http://schemas.uipath.com/workflow/activities/python" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="22">
       <x:String>System.Activities</x:String>
@@ -50,10 +50,10 @@
       <AssemblyReference>UiPath.CV</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="對 Excel 檔中的工作表，產製樞紐分析表。&#xA;&#xA;參數說明 :  &#xA;str_PythonScriptPath : Python 程式碼的路徑&#xA;str_PythonHomePath : Python 執行檔的路徑&#xA;str_ExcelPath : 原始資料(Excel 檔)的路徑&#xA;str_Groupers : 樞紐分析表的列&#xA;str_Aggregations : 樞紐分析表的欄&#xA;int_FillValue :  填補樞紐分析表的缺值&#xA;str_OutputPath : 樞紐分析表寫入 Excel 檔的路徑(含副檔名)&#xA;str_OutputSheetName : 樞紐分析表寫入 Excel 檔中的工作表名稱&#xA;&#xA;註 : 樞紐分析表中值的計算方式，須在 Python 程式碼中修改。" DisplayName="Pivot Table" sap:VirtualizedContainerService.HintSize="450.4,944.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="對 Excel 檔中的工作表，產製樞紐分析表。&#xA;&#xA;參數說明 :  &#xA;str_PythonScriptPath : Python 程式碼的路徑&#xA;str_PythonHomePath : Python 執行檔的路徑&#xA;str_ExcelPath : 原始資料(Excel 檔)的路徑&#xA;str_Groupers : 樞紐分析表的列&#xA;str_Aggregations : 樞紐分析表的欄&#xA;int_FillValue :  填補樞紐分析表的缺值&#xA;str_OutputPath : 樞紐分析表寫入 Excel 檔的路徑(含副檔名)&#xA;str_OutputSheetName : 樞紐分析表寫入 Excel 檔中的工作表名稱&#xA;&#xA;註 : 樞紐分析表中，欄位的統計方式，須在 Python 程式碼中修改。" DisplayName="Pivot Table" sap:VirtualizedContainerService.HintSize="450.4,944.8" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Default="%[CreatePivotTable]" Name="str_LogPrefix" />
-      <Variable x:TypeArguments="x:String" Default="C:\\......\\AppData\\Local\\Programs\\Python\\Python36" Name="str_PythonHomePath" />
+      <Variable x:TypeArguments="x:String" Default="C:\\Users\\YenLin\\AppData\\Local\\Programs\\Python\\Python36" Name="str_PythonHomePath" />
       <Variable x:TypeArguments="x:String" Default="D:\\RPA_UiPath\\Python x RPA\\Pivot Table\\Pivot_Table.py" Name="str_PythonScriptPath" />
       <Variable x:TypeArguments="p:PythonObject" Name="po_Result" />
       <Variable x:TypeArguments="p:PythonObject" Name="po_PythonResult" />
