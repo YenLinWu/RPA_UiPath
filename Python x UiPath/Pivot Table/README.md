@@ -42,7 +42,7 @@
   <img src="https://github.com/YenLinWu/RPA_UiPath/blob/master/Python%20x%20UiPath/Pivot%20Table/PPT_Images/PPT8.jpg">
 </p>
 
-#### 參考資料  
+#### Python 語法參考資料  
 - [pandas.read_excel( )](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_excel.html)   
 - [pandas.pivot_table( )](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.pivot_table.html) 
 - [pandas.DataFrame.reset_index( )](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.pivot_table.html)   
