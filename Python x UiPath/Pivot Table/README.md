@@ -38,9 +38,14 @@
   <img src="https://github.com/YenLinWu/RPA_UiPath/blob/master/Python%20x%20UiPath/Pivot%20Table/PPT_Images/PPT7.JPG">
 </p>
 
+<p align="center">
+  <img src="https://github.com/YenLinWu/RPA_UiPath/blob/master/Python%20x%20UiPath/Pivot%20Table/PPT_Images/PPT8.JPG">
+</p>
+
 #### 參考資料  
 - [pandas.read_excel( )](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_excel.html)   
 - [pandas.pivot_table( )](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.pivot_table.html) 
-- [pandas.DataFrame.groupby( )](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.groupby.html)
 - [pandas.DataFrame.reset_index( )](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.pivot_table.html)   
-- [pandas.DataFrame.to_excel( )](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.to_excel.html)
+- [pandas.DataFrame.to_excel( )](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.to_excel.html)  
+- [pandas.DataFrame.groupby( )](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.groupby.html)  
+- [pandas.DataFrame.merge( )](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.merge.html)
