@@ -1,0 +1,113 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="460.8,1064" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:p="http://schemas.uipath.com/workflow/activities/python" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.Python</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Python</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.CV</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap2010:Annotation.AnnotationText="對 Excel 檔工作表中的特定欄位，依年度計算其成長率。&#xA;&#xA;參數說明 :  &#xA;str_PythonScriptPath : Python 程式碼的路徑&#xA;str_PythonHomePath : Python 執行檔的路徑&#xA;str_ExcelPath : 原始資料(Excel 檔)的路徑&#xA;str_Groupers : 分組的欄位&#xA;str_TargetColumn : 計算成長率的欄位&#xA;str_OutputPath : 成長率表寫入 Excel 檔的路徑(含副檔名)&#xA;str_OutputSheetName : 成長率表寫入 Excel 檔中的工作表名稱" DisplayName="Calculate Growth Rate" sap:VirtualizedContainerService.HintSize="450.4,899.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Default="%[GrowthRate]" Name="str_LogPrefix" />
+      <Variable x:TypeArguments="x:String" Name="str_PythonHomePath">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:String">C:\\......\\AppData\\Local\\Programs\\Python\\Python36</Literal>
+        </Variable.Default>
+      </Variable>
+      <Variable x:TypeArguments="x:String" Default="D:\\RPA_UiPath\\Python x RPA\\Calculate Growth Rate\\Calculate_Growth_Rate.py" Name="str_PythonScriptPath" />
+      <Variable x:TypeArguments="x:String" Default="D:\RPA_UiPath\Python x RPA\Calculate Growth Rate\Input\SampleData.xlsx" Name="str_ExcelPath" />
+      <Variable x:TypeArguments="x:String" Default="D:\RPA_UiPath\Python x RPA\Calculate Growth Rate\Output\GrowthRate.xlsx" Name="str_OutputPath" />
+      <Variable x:TypeArguments="p:PythonObject" Name="po_Result" />
+      <Variable x:TypeArguments="p:PythonObject" Name="po_PythonResult" />
+      <Variable x:TypeArguments="x:String" Default="NAME,PRODUCT" Name="str_Groupers" />
+      <Variable x:TypeArguments="x:String" Default="PRICE" Name="str_TargetColumn" />
+      <Variable x:TypeArguments="x:String" Default="成長率" Name="str_OutputSheetName" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="408.8,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[str_LogPrefix + &quot; Start Job&quot;]">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:LogMessage>
+    <ui:KillProcess ContinueOnError="{x:Null}" Process="{x:Null}" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="408.8,22.4" sap2010:WorkflowViewState.IdRef="KillProcess_1" ProcessName="excel" />
+    <p:PythonScope DisplayName="Python Scope" sap:VirtualizedContainerService.HintSize="408.8,314.4" sap2010:WorkflowViewState.IdRef="PythonScope_1" Path="[str_PythonHomePath]" TargetPlatform="x64" Version="Python_36">
+      <p:PythonScope.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="PythonEngineSessionProperty" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="375.2,277.6" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <p:LoadScript Code="{x:Null}" DisplayName="Load Python Script" sap:VirtualizedContainerService.HintSize="333.6,60" sap2010:WorkflowViewState.IdRef="LoadScript_1" Result="[po_Result]" ScriptFile="[str_PythonScriptPath]" />
+            <p:InvokeMethod DisplayName="Invoke Python Method" sap:VirtualizedContainerService.HintSize="333.6,22.4" sap2010:WorkflowViewState.IdRef="InvokeMethod_1" Instance="[po_Result]" Name="Growth_Rate" Parameters="[{ str_ExcelPath, str_Groupers, str_TargetColumn, str_OutputPath, str_OutputSheetName }]" Result="[po_PythonResult]" />
+            <p:GetObject x:TypeArguments="x:Object" Result="{x:Null}" DisplayName="Get Python Object" sap:VirtualizedContainerService.HintSize="333.6,22.4" sap2010:WorkflowViewState.IdRef="GetObject`1_1" PythonObject="[po_PythonResult]" />
+          </Sequence>
+        </ActivityAction>
+      </p:PythonScope.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </p:PythonScope>
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="408.8,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[str_LogPrefix + &quot; End Job&quot;]" />
+  </Sequence>
+</Activity>
