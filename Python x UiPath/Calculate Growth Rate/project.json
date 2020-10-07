@@ -1,0 +1,37 @@
+{
+  "name": "Calculate Growth Rate",
+  "description": "RPA 執行 Python 程式碼，對 Excel 檔工作表中的特定欄位，依年度計算其成長率。",
+  "main": "Calculate Growth Rate.xaml",
+  "dependencies": {
+    "UiPath.Excel.Activities": "[2.9.3-beta.1188448]",
+    "UiPath.Mail.Activities": "[1.8.6]",
+    "UiPath.Python.Activities": "[1.1.6863.33404]",
+    "UiPath.System.Activities": "[20.4.0]",
+    "UiPath.UIAutomation.Activities": "[20.10.4-preview]"
+  },
+  "webServices": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "20.4.3.0",
+  "projectVersion": "1.0.0",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "isPausable": true,
+    "requiresUserInteraction": true,
+    "supportsPersistence": false,
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow"
+  },
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Process",
+    "libraryOptions": {
+      "includeOriginalXaml": false,
+      "privateWorkflows": []
+    },
+    "fileInfoCollection": []
+  },
+  "expressionLanguage": "VisualBasic"
+}
