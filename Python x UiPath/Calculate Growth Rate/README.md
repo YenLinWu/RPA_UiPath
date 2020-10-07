@@ -1,4 +1,4 @@
-# Python 製作樞紐分析表   
+# Python 計算成長率   
 
 #### 作者
 <span> - &copy; Tom Wu (<a href="https://github.com/YenLinWu">Github</a>) </span>  
@@ -9,43 +9,39 @@
 * Python 3.6
 * Microsoft Office 2016
 
-#### 步驟說明 [PPT](https://github.com/YenLinWu/RPA_UiPath/blob/master/Python%20x%20UiPath/Pivot%20Table/Pivot%20Table.pdf)   
+#### 步驟說明 [PPT](https://github.com/YenLinWu/RPA_UiPath/blob/master/Python%20x%20UiPath/Calculate%20Growth%20Rate/Calculate%20Growth%20Rate.pdf)   
 <p align="center">
-  <img src="https://github.com/YenLinWu/RPA_UiPath/blob/master/Python%20x%20UiPath/Pivot%20Table/PPT_Images/PPT1.JPG">
+  <img src="https://github.com/YenLinWu/RPA_UiPath/blob/master/Python%20x%20UiPath/Calculate%20Growth%20Rate/PPT_Images/PPT1.JPG">
 </p>
 
 <p align="center">
-  <img src="https://github.com/YenLinWu/RPA_UiPath/blob/master/Python%20x%20UiPath/Pivot%20Table/PPT_Images/PPT2.JPG">
+  <img src="https://github.com/YenLinWu/RPA_UiPath/blob/master/Python%20x%20UiPath/Calculate%20Growth%20Rate/PPT_Images/PPT2.JPG">
 </p>
 
 <p align="center">
-  <img src="https://github.com/YenLinWu/RPA_UiPath/blob/master/Python%20x%20UiPath/Pivot%20Table/PPT_Images/PPT3.JPG">
+  <img src="https://github.com/YenLinWu/RPA_UiPath/blob/master/Python%20x%20UiPath/Calculate%20Growth%20Rate/PPT_Images/PPT3.JPG">
 </p>
 
 <p align="center">
-  <img src="https://github.com/YenLinWu/RPA_UiPath/blob/master/Python%20x%20UiPath/Pivot%20Table/PPT_Images/PPT4.JPG">
+  <img src="https://github.com/YenLinWu/RPA_UiPath/blob/master/Python%20x%20UiPath/Calculate%20Growth%20Rate/PPT_Images/PPT4.JPG">
 </p>
 
 <p align="center">
-  <img src="https://github.com/YenLinWu/RPA_UiPath/blob/master/Python%20x%20UiPath/Pivot%20Table/PPT_Images/PPT5.JPG">
+  <img src="https://github.com/YenLinWu/RPA_UiPath/blob/master/Python%20x%20UiPath/Calculate%20Growth%20Rate/PPT_Images/PPT5.JPG">
 </p>
 
 <p align="center">
-  <img src="https://github.com/YenLinWu/RPA_UiPath/blob/master/Python%20x%20UiPath/Pivot%20Table/PPT_Images/PPT6.JPG">
+  <img src="https://github.com/YenLinWu/RPA_UiPath/blob/master/Python%20x%20UiPath/Calculate%20Growth%20Rate/PPT_Images/PPT6.JPG">
 </p>
 
 <p align="center">
-  <img src="https://github.com/YenLinWu/RPA_UiPath/blob/master/Python%20x%20UiPath/Pivot%20Table/PPT_Images/PPT7.JPG">
-</p>
-
-<p align="center">
-  <img src="https://github.com/YenLinWu/RPA_UiPath/blob/master/Python%20x%20UiPath/Pivot%20Table/PPT_Images/PPT8.jpg">
+  <img src="https://github.com/YenLinWu/RPA_UiPath/blob/master/Python%20x%20UiPath/Calculate%20Growth%20Rate/PPT_Images/PPT7.JPG">
 </p>
 
 #### Python 語法參考資料  
 - [pandas.read_excel( )](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_excel.html)   
-- [pandas.pivot_table( )](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.pivot_table.html) 
-- [pandas.DataFrame.reset_index( )](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.pivot_table.html)   
-- [pandas.DataFrame.to_excel( )](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.to_excel.html)  
+- [pandas.DataFrame.sort_values( )](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.sort_values.html)  
 - [pandas.DataFrame.groupby( )](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.groupby.html)  
-- [pandas.DataFrame.merge( )](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.merge.html)
+- [pandas.DataFrame.pct_change( )](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.pct_change.html)  
+- [pandas.DataFrame.apply( )](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.apply.html#pandas-dataframe-apply)  
+- [pandas.DataFrame.to_excel( )](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.to_excel.html)  
