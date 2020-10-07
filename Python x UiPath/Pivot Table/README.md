@@ -39,7 +39,7 @@
 </p>
 
 <p align="center">
-  <img src="https://github.com/YenLinWu/RPA_UiPath/blob/master/Python%20x%20UiPath/Pivot%20Table/PPT_Images/PPT8.JPG">
+  <img src="https://github.com/YenLinWu/RPA_UiPath/blob/master/Python%20x%20UiPath/Pivot%20Table/PPT_Images/PPT8.jpg">
 </p>
 
 #### 參考資料  
