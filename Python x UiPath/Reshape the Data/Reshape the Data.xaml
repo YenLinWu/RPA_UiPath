@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="440,1119.2" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:p="http://schemas.uipath.com/workflow/activities/python" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="910.4,1119.2" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:p="http://schemas.uipath.com/workflow/activities/python" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -51,10 +51,14 @@
       <AssemblyReference>System.Memory</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="對 Excel 檔工作表中的資料，進行結構的重組。&#xA;&#xA;參數說明 :  &#xA;str_PythonScriptPath : Python 程式碼的路徑&#xA;str_PythonHomePath : Python 執行檔的路徑&#xA;str_ExcelPath : 原始資料(Excel 檔)的路徑&#xA;str_Permutations : 欲重新排列的欄位&#xA;int_FirstLevelIndex : df stack 後，第一個轉成欄的 index &#xD;&#xA;int_SecondLevelIndex : df stack 後，第二個轉成欄的 index&#xA;str_OutputPath : 資料重新排列後，欲寫入 Excel 檔的路徑(含副檔名)&#xA;str_OutputSheetName : 寫入 Excel 檔中的工作表名稱" DisplayName="Reshape the Data" sap:VirtualizedContainerService.HintSize="450.4,914.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
+  <Sequence sap2010:Annotation.AnnotationText="對 Excel 檔工作表中的資料，進行結構的重組。&#xA;&#xA;參數說明 :  &#xA;str_PythonScriptPath : Python 程式碼的路徑&#xA;str_PythonHomePath : Python 執行檔的路徑&#xA;str_ExcelPath : 原始資料(Excel 檔)的路徑&#xA;str_Permutations : 欲重新排列的欄位&#xA;int_FirstLevelIndex : df stack 後，第一個轉成欄的 index &#xA;int_SecondLevelIndex : df stack 後，第二個轉成欄的 index&#xA;str_OutputPath : 資料重新排列後，欲寫入 Excel 檔的路徑(含副檔名)&#xA;str_OutputSheetName : 寫入 Excel 檔中的工作表名稱" DisplayName="Reshape the Data" sap:VirtualizedContainerService.HintSize="450.4,914.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Default="%[ReshapeData]" Name="str_LogPrefix" />
-      <Variable x:TypeArguments="x:String" Default="C:\\Users\\YenLin\\AppData\\Local\\Programs\\Python\\Python36" Name="str_PythonHomePath" />
+      <Variable x:TypeArguments="x:String" Name="str_PythonHomePath">
+        <Variable.Default>
+          <Literal x:TypeArguments="x:String">C:\\......\\AppData\\Local\\Programs\\Python\\Python36</Literal>
+        </Variable.Default>
+      </Variable>
       <Variable x:TypeArguments="x:String" Default="D:\\RPA_UiPath\\Python x RPA\\Reshape the Data\\Reshape_the_Data.py" Name="str_PythonScriptPath" />
       <Variable x:TypeArguments="x:String" Default="D:\RPA_UiPath\Python x RPA\Reshape the Data\Input\SampleData.xlsx" Name="str_ExcelPath" />
       <Variable x:TypeArguments="x:String" Default="D:\RPA_UiPath\Python x RPA\Reshape the Data\Output\ReshapedData.xlsx" Name="str_OutputPath" />
