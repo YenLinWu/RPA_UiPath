@@ -1,4 +1,4 @@
-# Python 製作樞紐分析表   
+# Python 重組資料表的結構   
 
 #### 作者
 <span> - &copy; Tom Wu (<a href="https://github.com/YenLinWu">Github</a>) </span>  
@@ -9,43 +9,41 @@
 * Python 3.6
 * Microsoft Office 2016
 
-#### 步驟說明 [PPT](https://github.com/YenLinWu/RPA_UiPath/blob/master/Python%20x%20UiPath/Pivot%20Table/Pivot%20Table.pdf)   
+#### 步驟說明 [PPT](https://github.com/YenLinWu/RPA_UiPath/blob/master/Python%20x%20UiPath/Reshape%20the%20Data/Reshape%20the%20Data.pdf)   
 <p align="center">
-  <img src="https://github.com/YenLinWu/RPA_UiPath/blob/master/Python%20x%20UiPath/Pivot%20Table/PPT_Images/PPT1.JPG">
+  <img src="https://github.com/YenLinWu/RPA_UiPath/blob/master/Python%20x%20UiPath/Reshape%20the%20Data/PTT_Images/PPT1.JPG">
 </p>
 
 <p align="center">
-  <img src="https://github.com/YenLinWu/RPA_UiPath/blob/master/Python%20x%20UiPath/Pivot%20Table/PPT_Images/PPT2.JPG">
+  <img src="https://github.com/YenLinWu/RPA_UiPath/blob/master/Python%20x%20UiPath/Reshape%20the%20Data/PTT_Images/PPT2.JPG">
 </p>
 
 <p align="center">
-  <img src="https://github.com/YenLinWu/RPA_UiPath/blob/master/Python%20x%20UiPath/Pivot%20Table/PPT_Images/PPT3.JPG">
+  <img src="https://github.com/YenLinWu/RPA_UiPath/blob/master/Python%20x%20UiPath/Reshape%20the%20Data/PTT_Images/PPT3.JPG">
 </p>
 
 <p align="center">
-  <img src="https://github.com/YenLinWu/RPA_UiPath/blob/master/Python%20x%20UiPath/Pivot%20Table/PPT_Images/PPT4.JPG">
+  <img src="https://github.com/YenLinWu/RPA_UiPath/blob/master/Python%20x%20UiPath/Reshape%20the%20Data/PTT_Images/PPT4.JPG">
 </p>
 
 <p align="center">
-  <img src="https://github.com/YenLinWu/RPA_UiPath/blob/master/Python%20x%20UiPath/Pivot%20Table/PPT_Images/PPT5.JPG">
+  <img src="https://github.com/YenLinWu/RPA_UiPath/blob/master/Python%20x%20UiPath/Reshape%20the%20Data/PTT_Images/PPT5.JPG">
 </p>
 
 <p align="center">
-  <img src="https://github.com/YenLinWu/RPA_UiPath/blob/master/Python%20x%20UiPath/Pivot%20Table/PPT_Images/PPT6.JPG">
+  <img src="https://github.com/YenLinWu/RPA_UiPath/blob/master/Python%20x%20UiPath/Reshape%20the%20Data/PTT_Images/PPT6.JPG">
 </p>
 
 <p align="center">
-  <img src="https://github.com/YenLinWu/RPA_UiPath/blob/master/Python%20x%20UiPath/Pivot%20Table/PPT_Images/PPT7.JPG">
+  <img src="https://github.com/YenLinWu/RPA_UiPath/blob/master/Python%20x%20UiPath/Reshape%20the%20Data/PTT_Images/PPT7.JPG">
 </p>
 
-<p align="center">
-  <img src="https://github.com/YenLinWu/RPA_UiPath/blob/master/Python%20x%20UiPath/Pivot%20Table/PPT_Images/PPT8.jpg">
-</p>
+#### 參考資料   
+- [Reshape using Stack() and unstack() function in Pandas python](https://www.datasciencemadesimple.com/reshape-using-stack-unstack-function-pandas-python/ "參考文章") 
 
 #### Python 語法參考資料  
 - [pandas.read_excel( )](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.read_excel.html)   
-- [pandas.pivot_table( )](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.pivot_table.html) 
-- [pandas.DataFrame.reset_index( )](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.pivot_table.html)   
+- [pandas.DataFrame.set_index( )](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.set_index.html)  
+- [pandas.DataFrame.stack( )](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.stack.html)    
+- [pandas.DataFrame.unstack( )](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.unstack.html)     
 - [pandas.DataFrame.to_excel( )](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.to_excel.html)  
-- [pandas.DataFrame.groupby( )](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.groupby.html)  
-- [pandas.DataFrame.merge( )](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.merge.html)
