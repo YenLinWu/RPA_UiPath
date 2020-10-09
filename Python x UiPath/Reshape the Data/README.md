@@ -9,7 +9,7 @@
 * Python 3.6
 * Microsoft Office 2016
 
-#### 步驟說明 [PPT](https://github.com/YenLinWu/RPA_UiPath/blob/master/Python%20x%20UiPath/Reshape%20the%20Data/Reshape%20the%20Data.pdf)   
+#### 步驟說明 [PPT下載](https://github.com/YenLinWu/RPA_UiPath/blob/master/Python%20x%20UiPath/Reshape%20the%20Data/Reshape%20the%20Data.pdf)   
 <p align="center">
   <img src="https://github.com/YenLinWu/RPA_UiPath/blob/master/Python%20x%20UiPath/Reshape%20the%20Data/PTT_Images/PPT1.JPG">
 </p>
