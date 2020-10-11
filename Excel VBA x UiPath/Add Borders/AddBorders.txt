@@ -1,0 +1,41 @@
+Sub AddBorders( SheetName As String, SelectedRange As String, _
+                Optional Weight As String = "Thin", Optional Color As String = "Black" )
+
+' 在指定的工作表中，對指定範圍的存儲格設定框線。
+
+    Dim rng As Range
+
+    Sheets( SheetName ).Select
+
+    If SelectedRange<>"" Then
+        Set rng = Range( SelectedRange )                  
+    Else 
+       ' Ctrl + 'A' 選取儲存格的範圍  
+        Range("A1").Select
+        Set rng = ActiveCell.CurrentRegion     
+    End If
+
+    ' 1. 設定框線
+    rng.Borders.LineStyle = xlContinuous
+        
+    ' 2. 設定框線的粗細(細、中、粗)
+    If Weight="Thin" Then 
+        rng.Borders.Weight = xlThin
+    ElseIf Weight="Medium" Then  
+        rng.Borders.Weight = xlMedium
+    ElseIf Weight="Thick" Then    
+        rng.Borders.Weight = xlThick
+    Else 
+    End If
+
+    ' 3. 設定框線的顏色(黑、紅、黃)
+    If Color="Black" Then 
+        rng.Borders.Color = RGB(0,0,0)
+    ElseIf Color="Red" Then  
+        rng.Borders.Color = RGB(255,0,0)
+    ElseIf Color="Yellow" Then    
+        rng.Borders.Color = RGB(255,255,0)
+    Else 
+    End If
+
+End Sub
