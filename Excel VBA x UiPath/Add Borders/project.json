@@ -1,6 +1,6 @@
 {
   "name": "Add Borders",
-  "description": "RPA 執行 VBA 程式碼，在 Excel 檔指定的工作表中，設定指定儲存格範圍的框線。",
+  "description": "RPA 執行 VBA 程式碼，在 Excel 檔指定的工作表中，設定指定範圍的儲存格框線。",
   "main": "Add Borders.xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[2.8.6]",
