@@ -16,3 +16,4 @@
 | *[Update Link](https://github.com/YenLinWu/RPA_UiPath/tree/master/Excel%20VBA%20x%20UiPath/Update%20Link)* | 更新 Excel 檔的外部資料連結。 |  |
 | *[Convert to Numeric](https://github.com/YenLinWu/RPA_UiPath/tree/master/Excel%20VBA%20x%20UiPath/Convert%20to%20Numeric)* | 在 Excel 檔指定的工作表中，對特定範圍中的儲存格，將其格式轉換成數值。 |  |
 | *[Column Width AutoFit](https://github.com/YenLinWu/RPA_UiPath/tree/master/Excel%20VBA%20x%20UiPath/Column%20Width%20AutoFit)* | 在 Excel 檔的指定工作表中，對指定的欄位進行自動調整欄位寬。 |  |  
+| *[Merge Cells](https://github.com/YenLinWu/RPA_UiPath/tree/master/Excel%20VBA%20x%20UiPath/Merge%20Cells)* | 在 Excel 檔指定的工作表中，合併多個指定範圍的儲存格。 |  |  
