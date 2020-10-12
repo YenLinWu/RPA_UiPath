@@ -1,0 +1,17 @@
+Sub MergeCells( SheetName As String, SelectedRange As String ) 
+
+' 在指定的工作表中，合併指定範圍的儲存格。
+    
+    Dim arr() As String, r As Variant
+
+    Sheets( SheetName ).Select    
+
+    ' Split the string to an array
+    arr = Split( SelectedRange, "," )
+
+    For Each r In arr
+        Range(r).Select
+        Selection.Merge
+    Next
+
+End Sub
