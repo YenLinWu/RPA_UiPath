@@ -6,4 +6,11 @@
 #### 系統    
 * Windows 10  
 * Microsoft Office 2016
-* UiPath Studio Pro 2020.4.3    
+* UiPath Studio Pro 2020.4.3   
+* Python 3.6   
+
+#### UiPath 結合應用  
+| 專案名稱 | 說明 | 
+| ---------- | ----------- |  
+| [Excel VBA x UiPath](https://github.com/YenLinWu/RPA_UiPath/tree/master/Excel%20VBA%20x%20UiPath) | 在 UiPath 中使用 VBA 調整報表 |  
+| [Python x UiPath](https://github.com/YenLinWu/RPA_UiPath/tree/master/Python%20x%20UiPath) | 在 UiPath 中使用 Python 製作報表 | 
