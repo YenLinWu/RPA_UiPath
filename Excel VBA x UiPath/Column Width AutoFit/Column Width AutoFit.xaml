@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="792,1354.4" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="464.8,1100.8" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="44">
       <x:String>System.Activities</x:String>
@@ -54,26 +54,21 @@
       <AssemblyReference>System.Memory</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap2010:Annotation.AnnotationText="Excel 檔中指定的工作表中，對指定欄位進行自動調整欄位寬。&#xA;&#xA;參數說明 :  &#xA;str_VBA_FolderPath : 存放 VBA 程式碼的資料夾路徑&#xA;str_InputPath : 存放 Excel 檔的資料夾路徑&#xA;str_OutputPath : 存放執行後 Excel 檔的資料夾路徑&#xA;str_SourseFileName : Excel 檔的檔案名稱(含副檔名)&#xA;str_SheetName : 指定的工作表名稱&#xA;str_ColumnLetter : 指定進行自動調整欄位寬的欄索引名稱" DisplayName="Column Width AutoFit" sap:VirtualizedContainerService.HintSize="475.2,1149.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence sap2010:Annotation.AnnotationText="Excel 檔中指定的工作表中，對指定欄位進行自動調整欄位寬。&#xA;&#xA;參數說明 :  &#xA;str_VBA_FolderPath : 存放 VBA 程式碼的資料夾路徑&#xA;str_InputFolderPath : 存放 Excel 檔的資料夾路徑&#xA;str_ExcelFileName : Excel 檔的檔案名稱(含副檔名)&#xA;str_SheetName : 指定的工作表名稱&#xA;str_AutoFitColumns : 自動調整欄寬的欄位英文索引" DisplayName="Column Width AutoFit" sap:VirtualizedContainerService.HintSize="475.2,896" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Default="%[ColumnWidthAutoFit]" Name="str_LogPrefix" />
-      <Variable x:TypeArguments="x:String" Name="str_InputPath">
+      <Variable x:TypeArguments="x:String" Default="D:\RPA_UiPath\Excel VBA x RPA\Column Width AutoFit\Input\" Name="str_InputFolderPath" />
+      <Variable x:TypeArguments="x:String" Default="SampleData.xlsx" Name="str_ExcelFileName" />
+      <Variable x:TypeArguments="x:String" Name="str_AutoFitColumns">
         <Variable.Default>
-          <Literal x:TypeArguments="x:String">D:\RPA_UiPath\Excel VBA x RPA\Column Width AutoFit\Input\</Literal>
+          <Literal x:TypeArguments="x:String">B:D</Literal>
         </Variable.Default>
       </Variable>
-      <Variable x:TypeArguments="x:String" Default="SampleData.xlsx" Name="str_SourseFileName" />
-      <Variable x:TypeArguments="x:String" Default="B" Name="str_ColumnLetter" />
       <Variable x:TypeArguments="x:String" Default="工作表1" Name="str_SheetName" />
-      <Variable x:TypeArguments="x:String" Name="str_OutputPath">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:String">D:\RPA_UiPath\Excel VBA x RPA\Column Width AutoFit\Output\</Literal>
-        </Variable.Default>
-      </Variable>
       <Variable x:TypeArguments="x:String" Default="ColumnWidthAutoFit.txt" Name="str_VBA_CodeName" />
       <Variable x:TypeArguments="x:String" Name="str_VBA_FolderPath">
         <Variable.Default>
-          <Literal x:TypeArguments="x:String">D:\UiPath_RPA\VBA_with_RPA\Column Width AutoFit\</Literal>
+          <Literal x:TypeArguments="x:String">D:\RPA_UiPath\Excel VBA x RPA\Column Width AutoFit\</Literal>
         </Variable.Default>
       </Variable>
     </Sequence.Variables>
@@ -83,10 +78,16 @@
         <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="433.6,92.8" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[str_LogPrefix + &quot; Start Job&quot;]" />
+    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="433.6,52" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[str_LogPrefix + &quot; Start Job&quot;]">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:LogMessage>
     <ui:KillProcess ContinueOnError="{x:Null}" Process="{x:Null}" DisplayName="Kill Process" sap:VirtualizedContainerService.HintSize="433.6,22.4" sap2010:WorkflowViewState.IdRef="KillProcess_2" ProcessName="excel" />
-    <ui:CopyFile ContinueOnError="{x:Null}" Destination="[str_OutputPath + str_SourseFileName]" DisplayName="Copy File (to Output Folder)" sap:VirtualizedContainerService.HintSize="433.6,157.6" sap2010:WorkflowViewState.IdRef="CopyFile_1" Overwrite="True" Path="[str_InputPath + str_SourseFileName]" />
-    <ui:ExcelApplicationScope Password="{x:Null}" CreateNewFile="False" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="433.6,382.4" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_2" WorkbookPath="[str_OutputPath + str_SourseFileName]">
+    <ui:ExcelApplicationScope Password="{x:Null}" CreateNewFile="False" DisplayName="Excel Application Scope" sap:VirtualizedContainerService.HintSize="433.6,382.4" sap2010:WorkflowViewState.IdRef="ExcelApplicationScope_2" WorkbookPath="[str_InputFolderPath + str_ExcelFileName]">
       <ui:ExcelApplicationScope.Body>
         <ActivityAction x:TypeArguments="ui:WorkbookApplication">
           <ActivityAction.Argument>
@@ -126,7 +127,7 @@
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
             </ui:Click>
-            <ui:InvokeVBA OutputValue="{x:Null}" CodeFilePath="[str_VBA_FolderPath + str_VBA_CodeName]" DisplayName="執行 VBA" EntryMethodName="[str_VBA_CodeName.Split(&quot;.&quot;C)(0)]" EntryMethodParameters="[{ str_SheetName, str_ColumnLetter }]" sap:VirtualizedContainerService.HintSize="333.6,88" sap2010:WorkflowViewState.IdRef="InvokeVBA_2" />
+            <ui:InvokeVBA OutputValue="{x:Null}" CodeFilePath="[str_VBA_FolderPath + str_VBA_CodeName]" DisplayName="執行 VBA" EntryMethodName="[str_VBA_CodeName.Split(&quot;.&quot;C)(0)]" EntryMethodParameters="[{ str_SheetName, str_AutoFitColumns }]" sap:VirtualizedContainerService.HintSize="333.6,88" sap2010:WorkflowViewState.IdRef="InvokeVBA_2" />
           </Sequence>
         </ActivityAction>
       </ui:ExcelApplicationScope.Body>
