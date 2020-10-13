@@ -1,9 +1,9 @@
-Sub ColumnWidthAutoFit( SheetName As String, ColumnLetter As String )
+Sub ColumnWidthAutoFit( SheetName As String, AutoFitColumns As String )
     
-' 指定的工作表中，自動調整指定的欄位寬。
+' 在指定的工作表中，自動調整指定的欄位寬。
 
     Sheets( SheetName ).Select     
-    Columns( ColumnLetter+":"+ColumnLetter ).Select
-    Columns( ColumnLetter+":"+ColumnLetter ).EntireColumn.AutoFit
+    Columns( AutoFitColumns ).Select
+    Columns( AutoFitColumns ).EntireColumn.AutoFit
 
 End Sub
