@@ -9,7 +9,9 @@
 * Microsoft Office 2016
   
 #### 參考資料   
-- [Invoke VBA](https://docs.uipath.com/activities/docs/invoke-vba "UiPath Activities Guide")  
+- [Invoke VBA](https://docs.uipath.com/activities/docs/invoke-vba "UiPath Activities Guide")     
+- [Excel 效能：最佳化效能阻礙的秘訣](https://docs.microsoft.com/zh-tw/office/vba/excel/concepts/excel-performance/excel-tips-for-optimizing-performance-obstructions)  
+- [Excel VBA 加速程式執行速度技巧教學](https://officeguide.cc/excel-vba-speed-up-macro-tips/)
   
 #### 實作範例     
 | 專案名稱 | 說明 | 
