@@ -12,5 +12,5 @@
 #### UiPath 結合應用  
 | 專案名稱 | 說明 | 
 | ---------- | ----------- |  
-| [Excel VBA x UiPath](https://github.com/YenLinWu/RPA_UiPath/tree/master/Excel%20VBA%20x%20UiPath) | 在 UiPath 中使用 VBA 調整 Excel 檔格式 |  
-| [Python x UiPath](https://github.com/YenLinWu/RPA_UiPath/tree/master/Python%20x%20UiPath) | 在 UiPath 中使用 Python 製作客製化報表 | 
+| [Excel VBA x UiPath](https://github.com/YenLinWu/RPA_UiPath/tree/master/Excel%20VBA%20x%20UiPath) | 在 UiPath 中使用 VBA ，執行 Excel 檔工作表的格式調整、外部連結更新、儲存格格式轉換、新增框線等動作。 |  
+| [Python x UiPath](https://github.com/YenLinWu/RPA_UiPath/tree/master/Python%20x%20UiPath) | 在 UiPath 中使用 Python ，製作客製化的報表。 | 
