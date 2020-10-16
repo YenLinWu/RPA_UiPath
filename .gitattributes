@@ -1,7 +1,7 @@
 # Auto detect text files and perform LF normalization
 #* text=auto
 
-*.caml linguist-detectable=true
+*.xaml linguist-detectable=true
 *.py linguist-detectable=true
 *.txt linguist-detectable=true
 
