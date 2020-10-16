@@ -1,2 +1,9 @@
 # Auto detect text files and perform LF normalization
-* text=auto
+#* text=auto
+
+*.caml linguist-detectable=true
+*.py linguist-detectable=true
+*.txt linguist-detectable=true
+
+
+
