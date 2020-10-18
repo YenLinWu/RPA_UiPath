@@ -10,5 +10,5 @@
 #### 實作範例   
 | Snippets | 程式說明 | 
 | ---------- | ----------- |
-| *Col Index 2 Letter in Excel* | Excel 欄位的索引值轉換成英文字母，例 : 工作表中的第3欄為 C、第52欄為 AZ 等。 |   
+| *Col Index 2 Letter in Excel* | 將 Excel 欄位的索引值轉換成英文字母，例 : 工作表中的第3欄為 C、第52欄為 AZ 等。 |   
 
