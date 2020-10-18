@@ -24,7 +24,7 @@ UiPath 程式開發實用語法彙整，請參考 [Wiki](https://github.com/YenL
 
 ## 實作專案 Practical Projects (by UiPath)  
 ### 1. [Excel VBA x UiPath](https://github.com/YenLinWu/RPA_UiPath/tree/master/Excel%20VBA%20x%20UiPath)
-在 UiPath 中呼叫 Excel VBA 程式碼，進行 Excel 檔的格式調整，例如 : 更新或移除 Excel 檔的外部資料連結、新增儲存格框線、自動調整欄寬、轉換儲存格的資料型態等。  
+在 UiPath 中呼叫 Excel VBA 程式碼，進行 Excel 檔的格式調整，例如 : 更新或移除 Excel 檔的外部資料連結、合併儲存格、新增儲存格框線、轉換儲存格的資料型態等。  
 
 ### 2. [Python x UiPath](https://github.com/YenLinWu/RPA_UiPath/tree/master/Python%20x%20UiPath)  
 當資料量很龐大時，透過 UiPath 與 Python 的結合，能讓 RPA 機器人更有效率且靈活地產製出我們想客製化的報表。 
