@@ -1,4 +1,5 @@
 # Python in UiPath   
+![Python3.6](https://img.shields.io/badge/Python-3.6-blue.svg)
 
 #### 作者
 <span> - &copy; Tom Wu (<a href="https://github.com/YenLinWu">Github</a>) </span>  
