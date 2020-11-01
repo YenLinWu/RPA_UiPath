@@ -83,7 +83,17 @@ print( text )
 ```  
 <br/>  
 
-  
+
+## 結論    
+在這個簡單範例中，雖可透過 OpenCV 的圖片前處理與 Tesseract OCR 的影像辨識，來幫助我們辨識出驗證碼中的資訊，但此方法仍有許多可改進的空間: 
+- 首先，辨識的準確度並不夠高，經作者實測的經驗，平均每次 RPA 機器人嘗試登入的次數為 5 ~ 8 次，也就是說，每次執行約需 5 ~ 8 次的嘗試才能登入成功；
+- 再者，若當驗證碼的圖片更加複雜時，例如: 英文數字混合、字體更加歪斜、更多的干擾線等，將大大降低此方法的可行性。   
+
+因此，對於其他網站的驗證碼識別，若經上述兩點考量後，發覺此方法並不可行，建議可透過訓練一個 AI 模型: 卷積遞迴神經網絡(CRNN)，來克服此方法在技術上的侷限與障礙。  
+> 註: 如何訓練一個卷積遞迴神經網絡(CRNN)? 可參考[ CRNN_with_CTC_Loss ](https://github.com/YenLinWu/CRNN_with_CTC_Loss)。
+<br/>  
+
+
 ## Python 語法參考     
 - [Geometric Transformations of Images](https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_imgproc/py_geometric_transformations/py_geometric_transformations.html?highlight=resize "OpenCV 圖片縮放") 
 - [Image Thresholding](https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_imgproc/py_thresholding/py_thresholding.html "OpenCV 圖片二值化")
