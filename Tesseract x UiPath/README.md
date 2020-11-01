@@ -4,9 +4,9 @@
 > 當網站登入具驗證碼(Capctha)機制時，先藉由 OpenCV 進行圖片前處理(Image Preprocessing)後，再透過 Tesseract OCR 影像識別，使得 RPA 機器人輸入正確的登入資訊，且成功登入網站。   
 
 
-## 示範  
+## 範例說明  
 本專案以 RPA 機器人登入[財團法人保險事業發展中心 保險統計資料庫加值服務](http://insdb.tii.org.tw/pivot/)為範例，本次執行登入過程中，RPA 機器人在第 6 次執行時登入成功:  
-- 註: 本示範執行日期 2020/11/1  
+- 註: 本範例執行日期 2020/11/1  
 
 ![image](./Demo.gif)
 
@@ -22,7 +22,7 @@
 <br/>   
  
    
-## OpenCV 及 Tesseract OCR 步驟說明   
+## OpenCV 及 Tesseract OCR 步驟    
 透過 OpenCV 套件(Open Source Computer Vision Library)所提供圖片前處理的工具，能讓驗證碼圖片中的數字更清楚地呈現。
  
 - ### Step 1 讀取驗證碼圖片  
