@@ -25,8 +25,8 @@ Source of vedio [Simplilearn](https://www.youtube.com/c/SimplilearnOfficial/feat
 ### 2. [Python x UiPath](https://github.com/YenLinWu/RPA_UiPath/tree/master/Python%20x%20UiPath)  
 當資料量很龐大時，透過 UiPath 與 Python 的結合，能讓 RPA 機器人更有效率且靈活地產製出我們想客製化的報表。   
 
-### 3. [Tesseract x UiPath](https://github.com/YenLinWu/RPA_UiPath/tree/master/Tesseract%20x%20UiPath)
-當網站登入具驗證碼(Capctha)機制時，先藉由 OpenCV 對圖像的前處理後，再透過 Tesseract OCR 的影像識別，使得 RPA 機器人成功登入網站。  
+### 3. [OpenCV x Tesseract x UiPath](https://github.com/YenLinWu/RPA_UiPath/tree/master/OpenCV%20x%20Tesseract%20x%20UiPath)
+當某個網站的登入需輸入驗證碼(Capctha)時，可嘗試先藉由 OpenCV 對驗證碼圖片進行前處理，再透過 Tesseract OCR 的影像識別，讓 RPA 機器人成功登入網站。  
   
 ## 開發參考資源 Coding References   
 - [UiPath Forum](https://forum.uipath.com/ "UiPath 論壇")
