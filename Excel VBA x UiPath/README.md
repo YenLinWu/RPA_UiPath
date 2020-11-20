@@ -5,7 +5,7 @@
 
 #### 系統    
 * Windows 10
-* UiPath Studio Pro 2020.4.3  
+* UiPath Studio Pro 2020.4.3 以上     
 * Microsoft Office 2016
   
 #### 參考資料   
