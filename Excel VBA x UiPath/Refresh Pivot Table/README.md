@@ -1,5 +1,5 @@
-# Convert to Numeric   
-> RPA 機器人執行 VBA 程式碼，針對 Excel 檔中特定範圍的儲存格資料，將其格式轉換成數值型態。   
+# Refresh Pivot Table   
+> RPA 機器人執行 VBA 程式碼，更新 Excel 檔中所有的樞紐分析表(Pivot Table)。   
 
 ![image](./README_gif/Demo.gif)
 
