@@ -11,7 +11,7 @@
 > &emsp; 【公式】 &rarr; 【名稱管理員】 &rarr; 【新增】  
 > &emsp;  &rarr; 新增名稱為 "Data" 且在參照到(R)中輸入 ``` = OFFSET(RawData!$A$1,0,0,COUNTA(RawData!$A:$A),4) ``` &rarr; 【確定】 &rarr; 【關閉】  
 > ![image](./README_gif/Step1_建立動態定義的範圍.png)
-- Step 2: 使用 "Data" 來建立樞紐分析表    
+- Step 2: 使用動態定義的範圍 "Data" 來建立樞紐分析表    
 > ![image](./README_gif/Step2_建立樞紐分析表.png)
 
 
