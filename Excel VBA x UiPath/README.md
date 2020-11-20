@@ -23,3 +23,4 @@
 | *[Convert to Numeric](https://github.com/YenLinWu/RPA_UiPath/tree/master/Excel%20VBA%20x%20UiPath/Convert%20to%20Numeric)* | 在 Excel 檔指定的工作表中，對特定範圍中的儲存格，將其格式轉換成數值。 | 
 | *[Column Width AutoFit](https://github.com/YenLinWu/RPA_UiPath/tree/master/Excel%20VBA%20x%20UiPath/Column%20Width%20AutoFit)* | 在 Excel 檔指定的工作表中，對指定的欄位進行自動調整欄位寬。 |  
 | *[Merge Cells](https://github.com/YenLinWu/RPA_UiPath/tree/master/Excel%20VBA%20x%20UiPath/Merge%20Cells)* | 在 Excel 檔指定的工作表中，合併指定範圍的儲存格。 <br/> 註 : 合併範圍可多個 |   
+| *[Refresh Pivot Table](https://github.com/YenLinWu/RPA_UiPath/tree/master/Excel%20VBA%20x%20UiPath/Refresh%20Pivot%20Table)* | 重新整理 Excel 檔中所有的樞紐分析表。 <br/> **註 : 使用動態定義的範圍來建立樞紐分析表** |   
