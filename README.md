@@ -11,7 +11,7 @@ Source of vedio [Simplilearn](https://www.youtube.com/c/SimplilearnOfficial/feat
 作者開發環境如下:  
 * Windows 10  
 * Microsoft Office 2016
-* UiPath Studio Pro 2020.4.3   
+* UiPath Studio Pro 2020.4.3 以上    
 * Python 3.6   
   
 ## 開發筆記 Programming Notes       
