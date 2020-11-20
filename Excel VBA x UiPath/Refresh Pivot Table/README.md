@@ -1,5 +1,5 @@
 # Refresh Pivot Table   
-> RPA 機器人執行 VBA 程式碼，更新 Excel 檔中所有的樞紐分析表(Pivot Table)。   
+> 在更新或新增 Excel 檔中的資料後，RPA 機器人執行 VBA 程式碼，重新整理 Excel 檔中所有的樞紐分析表(Pivot Table)。   
 
 ![image](./README_gif/Demo.gif)
 
