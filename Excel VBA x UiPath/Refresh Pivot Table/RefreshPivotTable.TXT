@@ -1,0 +1,7 @@
+Sub RefreshPivotTable( )
+    
+' 更新 Excel 檔中所有的樞紐分析表
+      
+    ThisWorkbook.RefreshAll
+
+End Sub
