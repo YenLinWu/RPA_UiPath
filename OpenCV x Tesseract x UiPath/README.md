@@ -26,7 +26,7 @@
 透過 OpenCV 套件(Open Source Computer Vision Library)所提供圖片前處理的工具，能讓驗證碼圖片中的數字更清楚地呈現。
  
 - ### Step 1 讀取驗證碼圖片 
-```command
+```python
 import cv2
 
 # img_path : 驗證碼圖片的路徑(含副檔名 .png)
@@ -39,41 +39,41 @@ rgb_img = bgr_img[ :,:,::-1 ]
 
 - ### Step 2 縮放驗證碼圖片   
 >> 將原始圖片從 104 x 24 (寬x高)的原大小縮放成 104 x 32 的大小:
-```command
+```python
 img_pixel = cv2.resize( rgb_img, (104,32) )
 ```  
 ![image](./Captcha_Images_Preprocessing/Step_2_Resize.png) 
 
 - ### Step 3 圖片二值化  
 >> 透過圖片二值化(Image Binarization)的方法，能使圖片呈現出明顯的黑白效果，從而清楚地凸顯出圖片中的目標輪廓:
-```command
+```python
 img_pixel = cv2.threshold( img_pixel, 20, 255, cv2.THRESH_BINARY )[1]
 ```  
 ![image](./Captcha_Images_Preprocessing/Step_3_Thresholding.png)
 
 - ### Step 4 圖片去躁  
 >> 透過圖片去躁(Image Denoising)的手法，能移除圖片中不必要且多餘的雜訊，從而保留住圖片中較重要的資訊:
-```command
+```python
 img_pixel = cv2.fastNlMeansDenoisingColored( img_pixel, None, 55, 55, 5, 15 )
 ```  
 ![image](./Captcha_Images_Preprocessing/Step_4_Denoising.png)
 
 - ### Step 5 圖片二值化  
-```command
+```python
 img_pixel = cv2.threshold( img_pixel, 50, 255, cv2.THRESH_BINARY )[1]
 ```  
 ![image](./Captcha_Images_Preprocessing/Step_5_Thresholding.png)
 
 - ### Step 6 圖片侵蝕  
 >> 影像形態學(Morphology)中的侵蝕(Erosion)手法，其作用為將圖像中高亮度的區域進行縮減；在本專案的範例中，經過二值化及去躁處理過後的驗證碼圖片，侵蝕能加粗圖片中的數字，使資訊更加明顯可見:
-```command
+```python
 img_pixel = cv2.erode( img_pixel, (5,5), iterations=1 )
 ```  
 ![image](./Captcha_Images_Preprocessing/Step_6_Erosion.png)
 
 - ### Step 7 Tesseract OCR 辨識  
 >> 經由上述 Step 2 ~ Step 6 前處理的過程後，使用 Tesseract OCR 套件對前處理過的圖片進行辨識:  
-```command
+```python
 #pip install pytesseract
 import pytesseract
 
