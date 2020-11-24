@@ -1,31 +1,16 @@
-# OpenCV x Tesseract OCR x UiPath   
-![Python3.6](https://img.shields.io/badge/Python-3.6-blue.svg) ![Tesseract](https://img.shields.io/badge/Tesseract-5.0.0_alpha_(20200328)-green.svg)
+# TensorFlow 2.3 x CRNN x UiPath   
+![Python3.6](https://img.shields.io/badge/Python-3.6-blue.svg) ![TensorFlow](https://img.shields.io/badge/TensorFlow-2.3-yellow.svg)
 
-> 當某個網站的登入須輸入驗證碼(Capctha)時，可先藉由 OpenCV 進行驗證碼圖片前處理(Image Preprocessing)後，再透過 Tesseract OCR 影像識別，讓 RPA 機器人輸入正確的登入資訊而成功登入網站。   
+> 藉由 TensorFlow 2.3 建置及訓練一個卷積遞迴神經網絡( Convolutional Recurrent Neural Network, CRNN )模型，並將此模型配置於 UiPath 程式碼中，使得 RPA 機器人能精準執行驗證碼圖片辨識。
 
+![image](./README_gif/Demo.gif)
 
-## 範例說明  
-本專案以 RPA 機器人登入[財團法人保險事業發展中心 保險統計資料庫加值服務](http://insdb.tii.org.tw/pivot/)為範例，下面所演示的範例中，RPA 機器人在經過 6 次反覆重試後登入成功:  
-- 註: 本範例執行日期 2020/11/1  
-
-![image](./Demo.gif)
-
-在這 6 次反覆重試登入中，各次驗證碼圖片的前處理及 OCR 識別結果如下:     
-| 次數 | 原始驗證碼圖片 | 圖片前處理 | Tesseract OCR 識別 |
-| :----------: | ---------- | ----------- | :-----------: |
-| 1 | ![image](./Captcha_Images/1st_Captcha.png) | ![image](./Captcha_Images/1st_Prediction__34.png) | **34** |
-| 2 | ![image](./Captcha_Images/2nd_Captcha.png) | ![image](./Captcha_Images/2nd_Prediction__4441.png) | **4441** |
-| 3 | ![image](./Captcha_Images/3rd_Captcha.png) | ![image](./Captcha_Images/3rd_Prediction__1425.png) | **1425** |
-| 4 | ![image](./Captcha_Images/4th_Captcha.png) | ![image](./Captcha_Images/4th_Prediction__6037.png) | **6037** |
-| 5 | ![image](./Captcha_Images/5th_Captcha.png) | ![image](./Captcha_Images/5th_Prediction__21410.png) | **21410** |
-| 6 | ![image](./Captcha_Images/6th_Captcha.png) | ![image](./Captcha_Images/6th_Prediction__6615.png) | **6615** |
-<br/>   
- 
    
-## OpenCV 及 Tesseract OCR 的處理步驟    
+## TensorFlow 2.x 環境建置步驟    
 透過 OpenCV 套件(Open Source Computer Vision Library)所提供圖片前處理的工具，能讓驗證碼圖片中的數字更清楚地呈現。
  
-- ### Step 1 讀取驗證碼圖片 
+- ### Step 1 下載安裝 Miniconda  
+>> 下載網址 : [Miniconda](https://docs.conda.io/en/latest/miniconda.html)
 ```command
 import cv2
 
@@ -95,15 +80,9 @@ print( text )
 
 
 ## 參考文獻  
-> (1) OpenCV 程式語法
-- [Geometric Transformations of Images](https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_imgproc/py_geometric_transformations/py_geometric_transformations.html?highlight=resize "OpenCV 圖片縮放") 
-- [Image Thresholding](https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_imgproc/py_thresholding/py_thresholding.html "OpenCV 圖片二值化")
-- [Image Denoising](https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_photo/py_non_local_means/py_non_local_means.html "OpenCV 圖片去躁")
-- [Morphological Transformations](https://opencv-python-tutroals.readthedocs.io/en/latest/py_tutorials/py_imgproc/py_morphological_ops/py_morphological_ops.html "OpenCV 圖片侵蝕")  
-> (2) Tesseract 安裝
-- [Tesseract at UB Mannheim](https://github.com/UB-Mannheim/tesseract/wiki "Tesseract 安裝檔下載")
-- [Day26-聽過 OCR 嗎? 實作看看吧 -- pytesseract](https://ithelp.ithome.com.tw/articles/10227263 "Tesseract 安裝及實作")
-- [Tesseract安裝](https://ithelp.ithome.com.tw/articles/10233316 "Tesseract 安裝步驟")
+- [Img Recognition/Classification with Tensorflow2.0 + UiPath step by step — local](https://medium.com/@reginwon/img-recognition-with-tensorflow-uipath-step-by-step-38accc241662) 
+- [輕鬆學習 Python：conda 的核心功能](https://medium.com/datainpoint/python-essentials-conda-quickstart-1f1e9ecd1025)
+- [Installing TensorFlow 2.3.0 and Torch 1.6.0 on Windows 10 with CUDA Support](https://medium.com/@mhfateen/installing-tensorflow-2-3-0-and-torch-1-6-0-on-windows-10-with-cuda-support-97ea4ff4f8fa)
 
 
 ## 作者
