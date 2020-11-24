@@ -1,10 +1,10 @@
 # TensorFlow 2.3 x CRNN x UiPath   
 ![Python3.6](https://img.shields.io/badge/Python-3.6-blue.svg) ![TensorFlow](https://img.shields.io/badge/TensorFlow-2.3-yellow.svg)
 
-> 藉由 TensorFlow 2.3 建置及訓練一個卷積遞迴神經網絡( Convolutional Recurrent Neural Network, CRNN )模型，並將此模型配置於 UiPath 程式碼中，使得 RPA 機器人能精確地辨識驗證碼圖片。
-
+> 藉由 TensorFlow 2.3 建置及訓練一個卷積遞迴神經網絡( Convolutional Recurrent Neural Network, CRNN )模型，並將此模型配置於 UiPath 程式碼中，使得 RPA 機器人能精確地辨識驗證碼圖片。  
+>> 註: 如何訓練一個卷積遞迴神經網絡(CRNN)? 請參考[ CRNN_with_CTC_Loss ](https://github.com/YenLinWu/CRNN_with_CTC_Loss)。  
 ![image](./README_gif/Demo.gif)
-註: 如何訓練一個卷積遞迴神經網絡(CRNN)? 請參考[ CRNN_with_CTC_Loss ](https://github.com/YenLinWu/CRNN_with_CTC_Loss)。
+  
 
 ## 系統環境
 作者開發環境如下:
@@ -13,7 +13,6 @@
 - UiPath Studio Pro 2020.4.3 以上
 - Python 3.6/ TensorFlow 2.3
 <br/>  
-
    
 ## TensorFlow 2.x 環境建置步驟     
 - ### Step 1 : 下載安裝 Miniconda  
@@ -53,6 +52,7 @@ print( tf.__version__ )
 ``` 
 ![image](./README_gif/Verify_TF_Installation.png)
 <br/>  
+
 
 ## UiPath 調用 TensorFlow 2.x 的設定        
 - ### Step 1 : 查詢 Python 執行檔路徑
