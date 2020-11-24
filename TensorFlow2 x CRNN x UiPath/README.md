@@ -1,8 +1,11 @@
 # TensorFlow 2.3 x CRNN x UiPath   
 ![Python3.6](https://img.shields.io/badge/Python-3.6-blue.svg) ![TensorFlow](https://img.shields.io/badge/TensorFlow-2.3-yellow.svg)
 
-> 藉由 TensorFlow 2.3 建置及訓練一個卷積遞迴神經網絡( Convolutional Recurrent Neural Network, CRNN )模型，並將此模型配置於 UiPath 程式碼中，使得 RPA 機器人能精確地辨識驗證碼圖片。  
->> 註: 如何訓練一個卷積遞迴神經網絡(CRNN)? 請參考[ CRNN_with_CTC_Loss ](https://github.com/YenLinWu/CRNN_with_CTC_Loss)。  
+> 本專案演示如何使用 UiPath 調用一個預訓練完成的 AI 模型 - 卷積遞迴神經網絡( Convolutional Recurrent Neural Networlando )，使 RPA 機器人能精確地辨識網頁驗證碼圖片。   
+> - 如何搭建及訓練卷積遞迴神經網絡(CRNN)? 請參考[ CRNN_with_CTC_Loss ](https://github.com/YenLinWu/CRNN_with_CTC_Loss)。   
+> - 驗證碼圖片來源 : [Taiwan Insurance Institute](http://insdb.tii.org.tw/pivot/ "財團法人保險事業發展中心 保險統計資料庫加值服務" )
+<p align="center"> 
+  
 ![image](./README_gif/Demo.gif)
   
 
@@ -30,8 +33,8 @@ conda env list
 ```console
 conda create --name 虛擬環境名稱 python=3.6
 ```
->> 註 : 截至專案當下，UiPath 中的 Python Activity 最高僅支援到 Python 3.6 版本。  
->> 註 : 刪除虛擬環境 ```conda env remove --name 虛擬環境名稱 ```
+>>  - 截至專案發佈時間，UiPath 的 Python Activity 最高僅支援到 Python 3.6 版本。  
+>>  - 刪除虛擬環境 ```conda env remove --name 虛擬環境名稱 ```
 
 - ### Step 5 : 啟動新建立的 Python 3.6 虛擬環境  
 ```console
@@ -59,7 +62,7 @@ print( tf.__version__ )
 >> 在 Anaconda Prompt(miniconda3) 中啟動裝有 TensorFlow 2.x 的虛擬環境後，輸入 `where python` 進行查詢 :    
 ![image](./README_gif/Python_Home_Path.png)
 
-- ### Step 2 : PythonScope 屬性設定
+- ### Step 2 : PythonScope 元件的屬性設定
 >> 引數 in_PythonHomePath = "C:\Users\------\miniconda3\envs\NewEnv"  
 ![image](./README_gif/PythonScope_Properties.png)
 <br/>  
