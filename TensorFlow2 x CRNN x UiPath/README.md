@@ -1,28 +1,26 @@
 # TensorFlow 2.3 x CRNN x UiPath   
 ![Python3.6](https://img.shields.io/badge/Python-3.6-blue.svg) ![TensorFlow](https://img.shields.io/badge/TensorFlow-2.3-yellow.svg)
 
-> 藉由 TensorFlow 2.3 建置及訓練一個卷積遞迴神經網絡( Convolutional Recurrent Neural Network, CRNN )模型，並將此模型配置於 UiPath 程式碼中，使得 RPA 機器人能精準執行驗證碼圖片辨識。
+> 藉由 TensorFlow 2.3 建置及訓練一個卷積遞迴神經網絡( Convolutional Recurrent Neural Network, CRNN )模型，並將此模型配置於 UiPath 程式碼中，使得 RPA 機器人能精確地辨識驗證碼圖片。
 
 ![image](./README_gif/Demo.gif)
 
+## 系統環境
+作者開發環境如下:
+
+- Windows 10
+- 16 GB RAM  
+- Intel i7 CPU  
+- UiPath Studio Pro 2020.4.3 以上
+- Python 3.6
+- TensorFlow 2.3
+
    
-## TensorFlow 2.x 環境建置步驟    
-透過 OpenCV 套件(Open Source Computer Vision Library)所提供圖片前處理的工具，能讓驗證碼圖片中的數字更清楚地呈現。
- 
+## TensorFlow 2.x 環境建置步驟     
 - ### Step 1 下載安裝 Miniconda  
 >> 下載網址 : [Miniconda](https://docs.conda.io/en/latest/miniconda.html)
-```command
-import cv2
 
-# img_path : 驗證碼圖片的路徑(含副檔名 .png)
-bgr_img = cv2.imread( img_path )
-
-# Convert BGR to RGB
-rgb_img = bgr_img[ :,:,::-1 ]
-```   
-![image](./Captcha_Images_Preprocessing/Step_1_Loading.png) &larr; 原始驗證碼圖片
-
-- ### Step 2 縮放驗證碼圖片   
+- ### Step 2 開啟   
 >> 將原始圖片從 104 x 24 (寬x高)的原大小縮放成 104 x 32 的大小:
 ```command
 img_pixel = cv2.resize( rgb_img, (104,32) )
