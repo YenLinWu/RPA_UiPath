@@ -8,9 +8,7 @@
 ## 系統環境
 作者開發環境如下:
 
-- Windows 10
-- 16 GB RAM  
-- Intel i7 CPU  
+- Windows 10/ 16 GB RAM/ Intel i7 CPU    
 - UiPath Studio Pro 2020.4.3 以上
 - Python 3.6
 - TensorFlow 2.3
@@ -20,50 +18,36 @@
 - ### Step 1 下載安裝 Miniconda  
 >> 下載網址 : [Miniconda](https://docs.conda.io/en/latest/miniconda.html)
 
-- ### Step 2 開啟   
->> 將原始圖片從 104 x 24 (寬x高)的原大小縮放成 104 x 32 的大小:
-```command
-img_pixel = cv2.resize( rgb_img, (104,32) )
-```  
-![image](./Captcha_Images_Preprocessing/Step_2_Resize.png) 
+- ### Step 2 開啟 Anaconda Prompt(miniconda3)   
+>> 【開始】&rarr; 以系統管理員身分執行【Anaconda Prompt(miniconda3)】
 
-- ### Step 3 圖片二值化  
->> 透過圖片二值化(Image Binarization)的方法，能使圖片呈現出明顯的黑白效果，從而清楚地凸顯出圖片中的目標輪廓:
-```command
-img_pixel = cv2.threshold( img_pixel, 20, 255, cv2.THRESH_BINARY )[1]
-```  
-![image](./Captcha_Images_Preprocessing/Step_3_Thresholding.png)
+- ### Step 3 查看目前已有的虛擬環境     
+```console
+conda env list
+```
 
-- ### Step 4 圖片去躁  
->> 透過圖片去躁(Image Denoising)的手法，能移除圖片中不必要且多餘的雜訊，從而保留住圖片中較重要的資訊:
-```command
-img_pixel = cv2.fastNlMeansDenoisingColored( img_pixel, None, 55, 55, 5, 15 )
-```  
-![image](./Captcha_Images_Preprocessing/Step_4_Denoising.png)
+- ### Step 4 創建新的 Python 3.6 虛擬環境  
+```console
+conda create --name 虛擬環境名稱 python=3.6
+```
 
-- ### Step 5 圖片二值化  
-```command
-img_pixel = cv2.threshold( img_pixel, 50, 255, cv2.THRESH_BINARY )[1]
-```  
-![image](./Captcha_Images_Preprocessing/Step_5_Thresholding.png)
+- ### Step 5 啟動新建立的 Python 3.6 虛擬環境  
+```console
+activate 虛擬環境名稱
+```
 
-- ### Step 6 圖片侵蝕  
->> 影像形態學(Morphology)中的侵蝕(Erosion)手法，其作用為將圖像中高亮度的區域進行縮減；在本專案的範例中，經過二值化及去躁處理過後的驗證碼圖片，侵蝕能加粗圖片中的數字，使資訊更加明顯可見:
-```command
-img_pixel = cv2.erode( img_pixel, (5,5), iterations=1 )
-```  
-![image](./Captcha_Images_Preprocessing/Step_6_Erosion.png)
+- ### Step 6 安裝 TensorFlow 2.x 
+```console
+pip install "tensorflow>=2.0.0"
+```
 
-- ### Step 7 Tesseract OCR 辨識  
->> 經由上述 Step 2 ~ Step 6 前處理的過程後，使用 Tesseract OCR 套件對前處理過的圖片進行辨識:  
-```command
-#pip install pytesseract
-import pytesseract
-
-pytesseract.pytesseract.tesseract_cmd = r'C:\\Program Files\\Tesseract-OCR\\tesseract.exe'
-text = pytesseract.image_to_string( img_pixel, lang='eng', config='--psm 7 --oem 3 -c tessedit_char_whitelist=0123456789' ) 
-print( text )
-```  
+- ### Step 7 檢查 TensorFlow 2.x 是否安裝成功
+```console
+python   
+import tensorflow as tf 
+print( tf.__version__ )
+``` 
+![image](./README_gif/Verify_TF_Installation.png)
 <br/>  
 
 
