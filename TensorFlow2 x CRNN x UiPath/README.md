@@ -1,7 +1,7 @@
 # TensorFlow 2.3 x CRNN x UiPath   
 ![Python3.6](https://img.shields.io/badge/Python-3.6-blue.svg) ![TensorFlow](https://img.shields.io/badge/TensorFlow-2.3-yellow.svg)
 
-> 本專案演示如何使用 UiPath 調用一個預訓練完成的 AI 模型 - 卷積遞迴神經網絡( Convolutional Recurrent Neural Networlando )，使 RPA 機器人能精確地辨識網頁驗證碼圖片。   
+> 本專案演示如何使用 UiPath 調用一個預訓練完成的 AI 模型 - 卷積遞迴神經網絡( Convolutional Recurrent Neural Network, CRNN )，使 RPA 機器人能精確地辨識網頁驗證碼圖片。   
 > - 如何搭建及訓練卷積遞迴神經網絡(CRNN)? 請參考[ CRNN_with_CTC_Loss ](https://github.com/YenLinWu/CRNN_with_CTC_Loss)。   
 > - 驗證碼圖片來源 : [Taiwan Insurance Institute](http://insdb.tii.org.tw/pivot/ "財團法人保險事業發展中心 保險統計資料庫加值服務" )
 <p align="center"> 
@@ -77,3 +77,8 @@ print( tf.__version__ )
 
 ## 作者
 <span> - &copy; Tom Wu (<a href="https://github.com/YenLinWu">Github</a>) </span>  
+
+
+## 致謝  
+如有轉載、改作、分享，請註明出處。  
+Please cite this repository [TensorFlow 2.3 x CRNN x UiPath](https://github.com/YenLinWu/RPA_UiPath/tree/master/TensorFlow2%20x%20CRNN%20x%20UiPath) if you use it.
