@@ -9,9 +9,9 @@ Source of vedio [Simplilearn](https://www.youtube.com/c/SimplilearnOfficial/feat
 ## 系統環境 System Environment     
 [UiPath 官方建議](https://docs.uipath.com/installation-and-upgrade/docs/studio-hardware-and-software-requirements "Hardware and Software Requirements")   
 作者開發環境如下:  
-* Windows 10  
-* Microsoft Office 2016
-* UiPath Studio Pro 2020.4.3 以上    
+* Windows 10/ 16 GB RAM/ Intel i7 CPU   
+* UiPath Studio Pro 2020.4.3 以上   
+* Microsoft Office 2016 
 * Python 3.6   
   
 ## 開發筆記 Programming Notes       
@@ -26,7 +26,10 @@ Source of vedio [Simplilearn](https://www.youtube.com/c/SimplilearnOfficial/feat
 當資料量很龐大時，透過 UiPath 與 Python 的結合，能讓 RPA 機器人更有效率且靈活地產製出我們想客製化的報表。   
 
 ### 3. [OpenCV x Tesseract x UiPath](https://github.com/YenLinWu/RPA_UiPath/tree/master/OpenCV%20x%20Tesseract%20x%20UiPath)
-當某個網站的登入需輸入驗證碼(Capctha)時，可嘗試先藉由 OpenCV 對驗證碼圖片進行前處理，再透過 Tesseract OCR 的影像識別，讓 RPA 機器人成功登入網站。  
+當某個網站的登入需輸入驗證碼(Capctha)時，可嘗試先藉由 OpenCV 對驗證碼圖片進行前處理，再透過 Tesseract OCR 的影像識別，讓 RPA 機器人成功登入網站。   
+  
+### 4. [TensorFlow2 x CRNN x UiPath](https://github.com/YenLinWu/RPA_UiPath/tree/master/TensorFlow2%20x%20CRNN%20x%20UiPath)
+在 UiPath 中調用一個預訓練完成的 AI 模型 - 卷積遞迴神經網絡( Convolutional Recurrent Neural Network, CRNN )，使得 RPA 機器人能精確地辨識網頁驗證碼圖片。  
   
 ## 開發參考資源 Coding References   
 - [UiPath Forum](https://forum.uipath.com/ "UiPath 論壇")
@@ -37,3 +40,7 @@ Source of vedio [Simplilearn](https://www.youtube.com/c/SimplilearnOfficial/feat
 
 ## 作者 Author  
 <span> - &copy; Tom Wu (<a href="https://github.com/YenLinWu">Github</a>) </span>  
+  
+## 致謝 Acknowledgement  
+如有轉載、改作、分享，請註明出處。  
+Please cite this repository [RPA_UiPath](https://github.com/YenLinWu/RPA_UiPath) if you use it.  
