@@ -104,7 +104,13 @@ print( text )
 - [Tesseract at UB Mannheim](https://github.com/UB-Mannheim/tesseract/wiki "Tesseract 安裝檔下載")
 - [Day26-聽過 OCR 嗎? 實作看看吧 -- pytesseract](https://ithelp.ithome.com.tw/articles/10227263 "Tesseract 安裝及實作")
 - [Tesseract安裝](https://ithelp.ithome.com.tw/articles/10233316 "Tesseract 安裝步驟")
-
+<br/>   
+  
 
 ## 作者
-<span> - &copy; Tom Wu (<a href="https://github.com/YenLinWu">Github</a>) </span>  
+<span> - &copy; Tom Wu (<a href="https://github.com/YenLinWu">Github</a>) </span>   
+  
+  
+## 致謝  
+如有轉載、改作、分享，請註明出處。  
+Please cite this repository [OpenCV x Tesseract OCR x UiPath](https://github.com/YenLinWu/RPA_UiPath/tree/master/OpenCV%20x%20Tesseract%20x%20UiPath) if you use it.
