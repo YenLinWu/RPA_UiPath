@@ -90,7 +90,8 @@ print( text )
 - 再者，若當驗證碼的圖片更加複雜時，例如: 英文字母與數字混合、字體更加歪斜、更多的干擾線等，將大福降低此方法的可行性。   
 
 因此，對於其他網站的驗證碼識別，若經上述兩點考量後，發覺此方法並不可行時，建議可透過訓練一個 AI 模型: 卷積遞迴神經網絡(CRNN)，來克服此方法在技術上的不足與侷限。  
-> 註: 如何訓練一個卷積遞迴神經網絡(CRNN)? 可參考[ CRNN_with_CTC_Loss ](https://github.com/YenLinWu/CRNN_with_CTC_Loss)。
+> - 如何訓練一個卷積遞迴神經網絡(CRNN)? 請參考[ CRNN_with_CTC_Loss ](https://github.com/YenLinWu/CRNN_with_CTC_Loss)     
+> - 如何調用一個預訓練完成的 AI 模型? 請參考[ TensorFlow 2.3 x CRNN x UiPath ](https://github.com/YenLinWu/RPA_UiPath/blob/master/TensorFlow2%20x%20CRNN%20x%20UiPath/README.md)  
 <br/>  
 
 
