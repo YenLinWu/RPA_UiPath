@@ -36,7 +36,8 @@ Source of vedio [Simplilearn](https://www.youtube.com/c/SimplilearnOfficial/feat
 - [字元集 (0-127)](https://docs.microsoft.com/zh-tw/office/vba/language/reference/user-interface-help/character-set-0127 "處理字串時參考")  
 - [字元集 (128-255)](https://docs.microsoft.com/zh-tw/office/vba/language/reference/user-interface-help/character-set-128255 "處理字串時參考")  
 - [正規表示式(Regular Expression)](https://www.regular-expressions.info/unicode.html "處理字串時參考")    
-- [Math 類別](https://docs.microsoft.com/zh-tw/dotnet/api/system.math?view=netframework-4.8 "數值運算時參考")
+- [Math 類別](https://docs.microsoft.com/zh-tw/dotnet/api/system.math?view=netframework-4.8 "數值運算時參考")  
+- [Supported Character Encoding](https://docs.uipath.com/activities/docs/supported-character-encoding "讀寫檔編碼方式")
 
 ## 作者 Author  
 <span> - &copy; Tom Wu (<a href="https://github.com/YenLinWu">Github</a>) </span>  
