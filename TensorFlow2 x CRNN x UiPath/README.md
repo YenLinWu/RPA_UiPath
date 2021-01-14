@@ -2,13 +2,17 @@
 ![Python3.6](https://img.shields.io/badge/Python-3.6-blue.svg) ![TensorFlow](https://img.shields.io/badge/TensorFlow-2.3-yellow.svg)
 
 > 本專案演示如何使用 UiPath 調用一個預訓練完成的 AI 模型 - 卷積遞迴神經網絡( Convolutional Recurrent Neural Network, CRNN )，使 RPA 機器人能精確地辨識網頁驗證碼圖片。   
-> - 利用 Tesseract OCR 辨識驗證碼，請參考[ OpenCV x Tesseract OCR x UiPath ](https://github.com/YenLinWu/RPA_UiPath/tree/master/OpenCV%20x%20Tesseract%20x%20UiPath)   
-> - 如何搭建及訓練卷積遞迴神經網絡(CRNN)? 請參考[ CRNN_with_CTC_Loss ](https://github.com/YenLinWu/CRNN_with_CTC_Loss)     
-> - 驗證碼圖片來源 : [Taiwan Insurance Institute](http://insdb.tii.org.tw/pivot/ "財團法人保險事業發展中心 保險統計資料庫加值服務" )
 <p align="center"> 
   
 ![image](./README_gif/Demo.gif)
-  
+<br/> 
+
+## 卷積遞迴神經網絡(CRNN)   
+![image](./README_gif/Architecture_of_CRNN.png)
+> - 如何搭建及訓練卷積遞迴神經網絡(CRNN)? 請參考[ CRNN_with_CTC_Loss ](https://github.com/YenLinWu/CRNN_with_CTC_Loss)    
+> - 驗證碼圖片來源 : [Taiwan Insurance Institute](http://insdb.tii.org.tw/pivot/ "財團法人保險事業發展中心 保險統計資料庫加值服務" )
+> - 利用 Tesseract OCR 辨識驗證碼，請參考[ OpenCV x Tesseract OCR x UiPath ](https://github.com/YenLinWu/RPA_UiPath/tree/master/OpenCV%20x%20Tesseract%20x%20UiPath)  
+<br/> 
 
 ## 系統環境
 作者開發環境如下:
@@ -17,7 +21,7 @@
 - UiPath Studio Pro 2020.4.3 以上
 - Python 3.6/ TensorFlow 2.3
 <br/>  
-   
+
 ## TensorFlow 2.x 環境建置步驟     
 - ### Step 1 : 下載安裝 Miniconda  
 >> 下載網址 : [Miniconda](https://docs.conda.io/en/latest/miniconda.html)
