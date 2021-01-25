@@ -38,6 +38,8 @@ Source of vedio [Simplilearn](https://www.youtube.com/c/SimplilearnOfficial/feat
 - [正規表示式(Regular Expression)](https://www.regular-expressions.info/unicode.html "處理字串時參考")    
 - [Math 類別](https://docs.microsoft.com/zh-tw/dotnet/api/system.math?view=netframework-4.8 "數值運算時參考")  
 - [Supported Character Encoding](https://docs.uipath.com/activities/docs/supported-character-encoding "讀寫檔編碼方式")
+- [DateTime.FromOADate(Double) Method](https://docs.microsoft.com/en-us/dotnet/api/system.datetime.fromoadate?view=netframework-4.7.2 "日期序列值轉成日期")
+- [DateTime.ToOADate Method](https://docs.microsoft.com/en-us/dotnet/api/system.datetime.tooadate?view=netframework-4.7.2 "日期轉成日期序列值")  
 
 ## 作者 Author  
 <span> - &copy; Tom Wu (<a href="https://github.com/YenLinWu">Github</a>) </span>  
