@@ -37,6 +37,7 @@ Source of vedio [Simplilearn](https://www.youtube.com/c/SimplilearnOfficial/feat
 - [字元集 (128-255)](https://docs.microsoft.com/zh-tw/office/vba/language/reference/user-interface-help/character-set-128255 "處理字串時參考")  
 - [正規表示式(Regular Expression)](https://www.regular-expressions.info/unicode.html "處理字串時參考")    
 - [Math 類別](https://docs.microsoft.com/zh-tw/dotnet/api/system.math?view=netframework-4.8 "數值運算時參考")  
+- [TEXT 函數](https://support.microsoft.com/zh-tw/office/text-%E5%87%BD%E6%95%B8-20d5ac4d-7b94-49fd-bb38-93d29371225c "Excel儲存格格式轉文字型態")
 - [Supported Character Encoding](https://docs.uipath.com/activities/docs/supported-character-encoding "讀寫檔編碼方式")
 - [DateTime.FromOADate(Double) Method](https://docs.microsoft.com/en-us/dotnet/api/system.datetime.fromoadate?view=netframework-4.7.2 "日期序列值轉成日期")
 - [DateTime.ToOADate Method](https://docs.microsoft.com/en-us/dotnet/api/system.datetime.tooadate?view=netframework-4.7.2 "日期轉成日期序列值")  
