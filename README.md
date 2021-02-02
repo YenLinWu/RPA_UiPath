@@ -33,14 +33,15 @@ Source of vedio [Simplilearn](https://www.youtube.com/c/SimplilearnOfficial/feat
   
 ## 開發參考資源 Coding References   
 - [UiPath Forum](https://forum.uipath.com/ "UiPath 論壇")
+- [Supported Character Encoding](https://docs.uipath.com/activities/docs/supported-character-encoding "讀寫檔編碼方式")
 - [字元集 (0-127)](https://docs.microsoft.com/zh-tw/office/vba/language/reference/user-interface-help/character-set-0127 "處理字串時參考")  
 - [字元集 (128-255)](https://docs.microsoft.com/zh-tw/office/vba/language/reference/user-interface-help/character-set-128255 "處理字串時參考")  
 - [正規表示式(Regular Expression)](https://www.regular-expressions.info/unicode.html "處理字串時參考")    
 - [Math 類別](https://docs.microsoft.com/zh-tw/dotnet/api/system.math?view=netframework-4.8 "數值運算時參考")  
-- [TEXT 函數](https://support.microsoft.com/zh-tw/office/text-%E5%87%BD%E6%95%B8-20d5ac4d-7b94-49fd-bb38-93d29371225c "Excel儲存格格式轉文字型態")
-- [Supported Character Encoding](https://docs.uipath.com/activities/docs/supported-character-encoding "讀寫檔編碼方式")
 - [DateTime.FromOADate(Double) Method](https://docs.microsoft.com/en-us/dotnet/api/system.datetime.fromoadate?view=netframework-4.7.2 "日期序列值轉成日期")
 - [DateTime.ToOADate Method](https://docs.microsoft.com/en-us/dotnet/api/system.datetime.tooadate?view=netframework-4.7.2 "日期轉成日期序列值")  
+- [EOMONTH 函數](https://support.microsoft.com/zh-tw/office/eomonth-%E5%87%BD%E6%95%B8-7314ffa1-2bc9-4005-9d66-f49db127d628 "Excel 中取得特定月份的最後一日")
+- [TEXT 函數](https://support.microsoft.com/zh-tw/office/text-%E5%87%BD%E6%95%B8-20d5ac4d-7b94-49fd-bb38-93d29371225c "Excel 中儲存格格式轉文字型態")
 
 ## 作者 Author  
 <span> - &copy; Tom Wu (<a href="https://github.com/YenLinWu">Github</a>) </span>  
