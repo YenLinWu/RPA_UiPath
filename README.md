@@ -30,7 +30,10 @@ Source of vedio [Simplilearn](https://www.youtube.com/c/SimplilearnOfficial/feat
   
 ### 4. [TensorFlow2 x CRNN x UiPath](https://github.com/YenLinWu/RPA_UiPath/tree/master/TensorFlow2%20x%20CRNN%20x%20UiPath)
 在 UiPath 中調用一個預訓練完成的 AI 模型 - 卷積遞迴神經網絡( Convolutional Recurrent Neural Network, CRNN )，使得 RPA 機器人能精確地辨識網頁驗證碼圖片。  
-  
+
+### 5. [Practical Examples in UiPath](https://github.com/YenLinWu/RPA_UiPath/tree/master/Examples)
+實作開發範例。  
+
 ## 開發參考資源 Coding References   
 - [UiPath Forum](https://forum.uipath.com/ "UiPath 論壇")
 - [Supported Character Encoding](https://docs.uipath.com/activities/docs/supported-character-encoding "讀寫檔編碼方式")
