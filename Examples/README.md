@@ -3,9 +3,18 @@
 ## 作者
 <span> - &copy; Tom Wu (<a href="https://github.com/YenLinWu">Github</a>) </span>  
 
-## 實作範例
-* [Google_News](#Google_News)
+## 實作範例  
+* [Trading Details of Foreign Investors](#Trading_Details_of_Foreign_Investors)
+* [Google News](#Google_News)
 * [Worldwide Tax Summaries Online](#Worldwide_Tax_Summaries_Online)
+
+## Trading_Details_of_Foreign_Investors
+在 [嗨投資](https://histock.tw/) 網站中抓取當日台股大盤三大法人買賣超的資訊   
+- 將網頁中爬取到的表格寫入 Excel ( [20210713_三大法人買賣超.xlsx](https://github.com/YenLinWu/RPA_UiPath/blob/master/Examples/Trading_Details_of_Foreign_Investors/Output/20210713_%E4%B8%89%E5%A4%A7%E6%B3%95%E4%BA%BA%E8%B2%B7%E8%B3%A3%E8%B6%85.xlsx) )。   
+
+![image](./Trading_Details_of_Foreign_Investors/README_gif/Trading_Details_of_Foreign_Investors.gif)
+
+Back to [實作範例](#實作範例)
 
 ## Google_News 
 在 Google 中查詢多家上市公司的新聞資訊
