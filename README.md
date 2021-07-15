@@ -36,7 +36,8 @@ Source of vedio [Simplilearn](https://www.youtube.com/c/SimplilearnOfficial/feat
 實作開發專案。  
 
 ## 開發參考資源 Coding References   
-- [UiPath Forum](https://forum.uipath.com/ "UiPath 論壇")
+- [UiPath Forum](https://forum.uipath.com/ "UiPath 論壇")  
+- [Cron Expression Generator & Explainer](https://www.freeformatter.com/cron-expression-generator-quartz.html)
 - [Supported Character Encoding](https://docs.uipath.com/activities/docs/supported-character-encoding "讀寫檔編碼方式")
 - [字元集 (0-127)](https://docs.microsoft.com/zh-tw/office/vba/language/reference/user-interface-help/character-set-0127 "處理字串時參考")  
 - [字元集 (128-255)](https://docs.microsoft.com/zh-tw/office/vba/language/reference/user-interface-help/character-set-128255 "處理字串時參考")  
