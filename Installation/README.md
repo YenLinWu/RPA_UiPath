@@ -10,7 +10,7 @@
 <img src="https://github.com/YenLinWu/RPA_UiPath/blob/master/Installation/README_Images/Platform_Components.png">
 </p>
 
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Sourse : [RPA: What it is?](https://mumas.in/site/index.php/guides/learnbyex/get-started)  
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Sourse : [RPA: What it is?](https://mumas.in/site/index.php/guides/learnbyex/get-started)  
 - UiPath Studio：用來設計及開發 RPA 工作流程的工具。  
 - UiPath Robot：實際執行工作流程的 RPA 機器人。  
 - UiPath Orchestrator：為一中控管理平台，用來管理、排程、監控 RPA 機器人的執行情況。  
