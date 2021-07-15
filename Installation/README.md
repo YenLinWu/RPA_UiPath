@@ -7,7 +7,7 @@
 ### UiPath 整體架構  
 
 <p align="center">
-<img width="500" src="https://github.com/YenLinWu/RPA_UiPath/blob/master/Installation/README_Images/Platform_Components.png">
+<img src="https://github.com/YenLinWu/RPA_UiPath/blob/master/Installation/README_Images/Platform_Components.png">
 </p>
 
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Sourse : [RPA: What it is?](https://mumas.in/site/index.php/guides/learnbyex/get-started)  
