@@ -7,12 +7,13 @@
 Source of vedio [Simplilearn](https://www.youtube.com/c/SimplilearnOfficial/featured) 
   
 ## 系統環境 System Environment     
-[UiPath 官方建議](https://docs.uipath.com/installation-and-upgrade/docs/studio-hardware-and-software-requirements "Hardware and Software Requirements")   
-作者開發環境如下:  
-* Windows 10/ 16 GB RAM/ Intel i7 CPU   
-* UiPath Studio Pro 2020.4.3 以上   
-* Microsoft Office 2016 
-* Python 3.6   
+- [UiPath 官方建議軟/硬體需求](https://docs.uipath.com/installation-and-upgrade/docs/studio-hardware-and-software-requirements "Hardware and Software Requirements")   
+- 作者開發環境如下:  
+  * Windows 10/ 16 GB RAM/ Intel i7 CPU   
+  * UiPath Studio Pro 2020.4.3 以上   
+  * Microsoft Office 2016 
+  * Python 3.6
+- [UiPath 安裝與設置](https://github.com/YenLinWu/RPA_UiPath/blob/master/Installation/README.md)    
   
 ## 開發筆記 Programming Notes       
 - UiPath 程式開發實用語法彙整，請參考 [Wiki](https://github.com/YenLinWu/RPA_UiPath/wiki)。    
