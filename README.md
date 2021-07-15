@@ -19,7 +19,7 @@ Source of vedio [Simplilearn](https://www.youtube.com/c/SimplilearnOfficial/feat
 - UiPath 程式開發實用語法彙整，請參考 [Wiki](https://github.com/YenLinWu/RPA_UiPath/wiki)。    
 - [程式碼片段(Snippets)](https://github.com/YenLinWu/RPA_UiPath/tree/master/Snippets)  
 
-## 實作專案 Practical Projects (by UiPath)  
+## 實作專案 Practical Projects (in UiPath)  
 ### 1. [Excel VBA x UiPath](https://github.com/YenLinWu/RPA_UiPath/tree/master/Excel%20VBA%20x%20UiPath)
 在 UiPath 中呼叫 Excel VBA 程式碼，進行 Excel 檔的格式調整，例如 : 更新或移除 Excel 檔的外部資料連結、合併儲存格、新增儲存格框線、轉換儲存格的資料型態、重新整理樞紐分析表等。  
 
