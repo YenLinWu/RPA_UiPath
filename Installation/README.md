@@ -3,10 +3,12 @@
 #### 作者
 <span> - &copy; Tom Wu (<a href="https://github.com/YenLinWu">Github</a>) </span>  
 
-### 流程步驟    
+### 安裝及設定步驟    
+
+> Studio 安裝版本 : UiPath Studio Pro 2021.4.4   
 
 <details>  
-<summary> 安裝 UiPath Studio
+<summary> 安裝 UiPath Studio Pro
 </summary>
   
 ***
@@ -40,7 +42,7 @@
 <img width="900" src="https://github.com/YenLinWu/RPA_UiPath/blob/master/Installation/README_Images/Install_UiPath_Studio_6.png">
 </p>  
   
-#### Step 7 : UiPath Studio 安裝完成    
+#### Step 7 : 完成 UiPath Studio Pro 安裝   
 <p align="center">
 <img width="900" src="https://github.com/YenLinWu/RPA_UiPath/blob/master/Installation/README_Images/Install_UiPath_Studio_7.png">
 </p> 
@@ -65,7 +67,7 @@
 </p>   
   
 #### Step 3 : 建立 Unattended Robot  
-&emsp;&emsp; 查詢 Domain\Username : 開啟「命令提是字元」 &rarr; 輸入「whoami」
+&emsp;&emsp; 查詢 Domain\Username : 開啟「命令提示字元」 &rarr; 輸入「whoami」
 <p align="center">
 <img width="900" src="https://github.com/YenLinWu/RPA_UiPath/blob/master/Installation/README_Images/OC_Settings_3.png">
 </p>   
