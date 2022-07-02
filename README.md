@@ -17,7 +17,7 @@ Source of vedio [Simplilearn](https://www.youtube.com/c/SimplilearnOfficial/feat
 
 ## 基礎語法 Basic Program Syntax  
 -  UiPath 介面導覽與基礎語法介紹 [ [教材下載](https://github.com/YenLinWu/RPA_UiPath/blob/master/UiPath_%E5%9F%BA%E7%A4%8E%E7%A8%8B%E5%BC%8F%E8%AA%9E%E6%B3%95%E4%BB%8B%E7%B4%B9.pdf) ]
--  <a href="[annex/附件1.docx](https://github.com/YenLinWu/RPA_UiPath/blob/master/UiPath_%E5%9F%BA%E7%A4%8E%E7%A8%8B%E5%BC%8F%E8%AA%9E%E6%B3%95%E4%BB%8B%E7%B4%B9.pdf)" target="_blank">UiPath_基礎程式語法介紹</a>
+-  <a href="https://github.com/YenLinWu/RPA_UiPath/blob/master/UiPath_%E5%9F%BA%E7%A4%8E%E7%A8%8B%E5%BC%8F%E8%AA%9E%E6%B3%95%E4%BB%8B%E7%B4%B9.pdf" target="_blank">UiPath_基礎程式語法介紹</a>
 
 ## 開發筆記 Programming Notes       
 - UiPath 程式開發實用語法彙整 [ 請參考 [Wiki](https://github.com/YenLinWu/RPA_UiPath/wiki) ]    
