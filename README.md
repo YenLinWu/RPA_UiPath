@@ -14,9 +14,12 @@ Source of vedio [Simplilearn](https://www.youtube.com/c/SimplilearnOfficial/feat
   * UiPath Studio Pro 2020.4.3 以上   
   * Microsoft Office 2016 
   * Python 3.6
-  
+
+## 基礎語法 Basic Program Syntax  
+-  UiPath 介面導覽與基礎語法介紹 [ [教材下載](https://github.com/YenLinWu/RPA_UiPath/blob/master/UiPath_%E5%9F%BA%E7%A4%8E%E7%A8%8B%E5%BC%8F%E8%AA%9E%E6%B3%95%E4%BB%8B%E7%B4%B9.pdf) ]
+
 ## 開發筆記 Programming Notes       
-- UiPath 程式開發實用語法彙整，請參考 [Wiki](https://github.com/YenLinWu/RPA_UiPath/wiki)。    
+- UiPath 程式開發實用語法彙整 [ 請參考 [Wiki](https://github.com/YenLinWu/RPA_UiPath/wiki) ]    
 - [程式碼片段(Snippets)](https://github.com/YenLinWu/RPA_UiPath/tree/master/Snippets)  
 
 ## 實作專案 Practical Projects (in UiPath)  
